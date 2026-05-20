@@ -13,27 +13,6 @@ if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
 !}
-on-display: {!
-data = Q.parliament_diagram;
-if (d3 && window && Q.started) {
-    var data = Q.parliament_diagram;
-    var screenWidth = document.getElementById('qualities').offsetWidth;
-
-    var width = Math.max(Math.min(screenWidth , 250), 120);
-    var heightRatio = screenWidth < 350 ? 0.5 : 0.6;
-    var height = width * heightRatio;
-
-    document.getElementById("reichstag_st").style.height = height + "px";
-
-    var reichstag_st = d3.parliament();
-    reichstag_st.width(width)
-    reichstag_st.height(height)
-    reichstag_st.innerRadiusCoef(0.4)
-    reichstag_st.enter.fromCenter(false).smallToBig(false)
-    reichstag_st.exit.toCenter(false).bigToSmall(false);
-    d3.select("#reichstag_st").datum(data).call(reichstag_st);
-}
-!}
 
 
 = <span style="color: #990000;">**PNI**</span> Leadership
@@ -295,6 +274,27 @@ Minister of Religious Affairs:
 <div style="text-align: left;margin-top: -15px;">[+ religious_minister +] ([+ religious_minister_party +])</div>
 
 @parliament
+on-display: {!
+data = Q.parliament_diagram;
+if (d3 && window && Q.started) {
+    var data = Q.parliament_diagram;
+    var screenWidth = document.getElementById('qualities').offsetWidth;
+
+    var width = Math.max(Math.min(screenWidth , 250), 120);
+    var heightRatio = screenWidth < 350 ? 0.5 : 0.6;
+    var height = width * heightRatio;
+
+    document.getElementById("reichstag_st").style.height = height + "px";
+
+    var reichstag_st = d3.parliament();
+    reichstag_st.width(width)
+    reichstag_st.height(height)
+    reichstag_st.innerRadiusCoef(0.4)
+    reichstag_st.enter.fromCenter(false).smallToBig(false)
+    reichstag_st.exit.toCenter(false).bigToSmall(false);
+    d3.select("#reichstag_st").datum(data).call(reichstag_st);
+}
+!}
 
 = Parliament
 
