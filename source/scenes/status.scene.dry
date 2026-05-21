@@ -301,5 +301,5 @@ if (d3 && window && Q.started) {
 <div style="text-align: center;">Speaker: [+ dprs_speaker +] ([? if dprs_speaker_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if dprs_speaker_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
 [? if dprs_speaker == "Sartono": <div><img src="img/portraits/sartono.jpg" alt="Sartono" style="width: 50%;display: block;margin: auto;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 
-<div style="justify-content: center;">{!<svg id="reichstag_st" style="width: 500px; height: 250px;"> </svg>!}</div>
+<div>{!<svg id="reichstag_st" style="width: 550px; height: 275px;"> </svg>!}</div>
 
