@@ -633,7 +633,6 @@ const data = [
 ];
 
 Q.parliament_diagram = data
-
 !}
 set-bg: img/map_2.jpg
 new-page: true
