@@ -572,7 +572,7 @@ const data = [
     },
     {
         "id": "murba",
-        "legend": "Murba,
+        "legend": "Murba",
         "name": "Murba",
         "seats": Math.round(Q.murba_r * Q.dprs_size),
     },
@@ -590,13 +590,13 @@ const data = [
     },
     {
         "id": "pir",
-        "legend": "PIR,
+        "legend": "PIR",
         "name": "PIR",
         "seats": Math.round(Q.pir_r * Q.dprs_size),
     },
     {
         "id": "prn",
-        "legend": "PRN,
+        "legend": "PRN",
         "name": "PRN",
         "seats": Math.round(Q.prn_r * Q.dprs_size),
     },
@@ -671,7 +671,7 @@ Q.wilopo_dissent = 30;
 Q.labor_dissent = 25;
 Q.sidik_dissent = 25;
 Q.masyumi_relation = 41;
-Q.pki_relation = 16
+Q.pki_relation = 16;
 Q.psii_relation = 31;
 Q.budget = 2;
 this.state.disableSaves = true;
