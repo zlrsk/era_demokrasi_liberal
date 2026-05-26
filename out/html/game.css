@@ -266,6 +266,15 @@ blockquote + blockquote.attribution {
     outline: none;
     padding: 10px;
 }
+#main_tab {
+  width: 33%;
+}
+#politics_tab {
+  width: 32%;
+}
+#poll_tab {
+  width: 33%;
+}
 #paramilitary_tab {
   width: 49%;
 }
