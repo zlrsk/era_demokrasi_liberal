@@ -309,8 +309,14 @@ if (d3 && window && Q.started) {
 
 {!<tr><td><div class="box" style='background-color:#c00000'> </div> !} PKI: {!</td><td>!} [+ pki_r +]% {!</td><td>!} [? if pki_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if pki_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}
 
+{!<tr><td><div class="box" style='background-color:#FF3333'> </div> !} Murba: {!</td><td>!} [+ murba_r +]% {!</td><td>!} [? if murba_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if murba_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}
+
 {!<tr><td><div class="box" style='background-color:#FF6666'> </div> !} PSI: {!</td><td>!} [+ psi_r +]% {!</td><td>!} [? if psi_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if psi_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}
- 
+
+{!<tr><td><div class="box" style='background-color:#FF9933'> </div> !} PIR: {!</td><td>!} [+ pir_r +]% {!</td><td>!} [? if pir_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if pir_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#545454'> </div> !} PRN: {!</td><td>!} [+ prn_r +]% {!</td><td>!} [? if prn_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if prn_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}
+
 {!<tr><td><div class="box" style='background-color:#66B2FF'> </div> !} Parkindo: {!</td><td>!} [+ kristen_r +]% {!</td><td>!} [? if kristen_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if kristen_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#330000'> </div> !} Katolik: {!</td><td>!} [+ katolik_r +]% {!</td><td>!} [? if katolik_in_government = 0: <span style="color: #CC0000;">Opp.</span> ?][? if katolik_in_government = 1: <span style="color: #009900;">Gov.</span> ?] {!</td></tr>!}

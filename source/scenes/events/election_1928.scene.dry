@@ -189,6 +189,12 @@ const data = [
         "seats": Math.round(Q.pki_r * Q.dprs_size),
     },
     {
+        "id": "murba",
+        "legend": "Murba,
+        "name": "Murba",
+        "seats": Math.round(Q.murba_r * Q.dprs_size),
+    },
+    {
         "id": "psi",
         "legend": "PSI",
         "name": "PSI",
@@ -199,6 +205,18 @@ const data = [
         "legend": "PNI",
         "name": "PNI",
         "seats": Math.round(Q.pni_r * Q.dprs_size),
+    },
+    {
+        "id": "pir",
+        "legend": "PIR,
+        "name": "PIR",
+        "seats": Math.round(Q.pir_r * Q.dprs_size),
+    },
+    {
+        "id": "prn",
+        "legend": "PRN,
+        "name": "PRN",
+        "seats": Math.round(Q.prn_r * Q.dprs_size),
     },
     {
         "id": "other",

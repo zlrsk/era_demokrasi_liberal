@@ -185,7 +185,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['rural', 'workers', 'santri', 'middle', 'aristocrats', 'christians'];
-Q.parties = ['pni', 'pki', 'masyumi', 'psii', 'psi', 'kristen', 'katolik', 'other'];
+Q.parties = ['pni', 'pki', 'masyumi', 'psii', 'psi', 'kristen', 'katolik', 'pir', 'prn', 'murba', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -196,6 +196,9 @@ Q.workers_psii = 3;
 Q.workers_psi = 10;
 Q.workers_kristen = 0;
 Q.workers_katolik = 0;
+Q.workers_pir = 0;
+Q.workers_prn = 0;
+Q.workers_murba = 5;
 Q.workers_other = 15;
 
 Q.santri_pni = 15;
@@ -205,6 +208,9 @@ Q.santri_psii = 30;
 Q.santri_psi = 0;
 Q.santri_kristen = 0;
 Q.santri_katolik = 0;
+Q.santri_pir = 0;
+Q.santri_prn = 0;
+Q.santri_murba = 0;
 Q.santri_other = 10;
 
 Q.middle_pni = 35;
@@ -212,8 +218,11 @@ Q.middle_pki = 0;
 Q.middle_masyumi = 5;
 Q.middle_psii = 0;
 Q.middle_psi = 3;
-Q.middle_kristen = 0.75;
-Q.middle_katolik = 0.5;
+Q.middle_kristen = 1;
+Q.middle_katolik = 1;
+Q.middle_pir = 0.75;
+Q.middle_prn = 0.75;
+Q.middle_murba = 0;
 Q.middle_other = 20;
 
 Q.aristocrats_pni = 40;
@@ -223,6 +232,9 @@ Q.aristocrats_psii = 3;
 Q.aristocrats_psi = 10;
 Q.aristocrats_kristen = 0.3;
 Q.aristocrats_katolik = 0.25;
+Q.aristocrats_pir = 10;
+Q.aristocrats_prn = 5;
+Q.aristocrats_murba = 0;
 Q.aristocrats_other = 15;
 
 Q.rural_pni = 10;
@@ -231,7 +243,10 @@ Q.rural_masyumi = 40;
 Q.rural_psii = 5;
 Q.rural_psi = 0.2;
 Q.rural_kristen = 1;
-Q.rural_katolik = 0.7;
+Q.rural_katolik = 0.7;   
+Q.rural_pir = 5;
+Q.rural_prn = 5;
+Q.rural_murba = 2;
 Q.rural_other = 15;
 
 Q.christians_pni = 10;
@@ -241,6 +256,9 @@ Q.christians_psii = 0;
 Q.christians_psi = 3;
 Q.christians_kristen = 50;
 Q.christians_katolik = 40;
+Q.christians_pir = 1;
+Q.christians_prn = 1;
+Q.christians_murba = 0;
 Q.christians_other = 15;
 
 
@@ -252,7 +270,10 @@ Q.psi_r = 7.3;
 Q.psii_r = 2.2;
 Q.kristen_r = 3.0;
 Q.katolik_r = 3.9;
-Q.other_r = 42.7;
+Q.pir_r = 7.3;
+Q.prn_r = 4.3;
+Q.murba_r = 1.7;
+Q.other_r = 29.4;
 
 Q.dprs_size = 2.32;
 Q.dprs_speaker = 'Sartono';
@@ -296,6 +317,8 @@ Q.kristen_in_government = 1;
 Q.katolik_in_government = 1;
 Q.pki_in_government = 0;
 Q.pir_in_government = 1;
+Q.prn_in_government = 0;
+Q.murba_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = pni + masyumi + psi
@@ -545,6 +568,12 @@ const data = [
         "seats": Math.round(Q.pki_r * Q.dprs_size),
     },
     {
+        "id": "murba",
+        "legend": "Murba,
+        "name": "Murba",
+        "seats": Math.round(Q.murba_r * Q.dprs_size),
+    },
+    {
         "id": "psi",
         "legend": "PSI",
         "name": "PSI",
@@ -555,6 +584,18 @@ const data = [
         "legend": "PNI",
         "name": "PNI",
         "seats": Math.round(Q.pni_r * Q.dprs_size),
+    },
+    {
+        "id": "pir",
+        "legend": "PIR,
+        "name": "PIR",
+        "seats": Math.round(Q.pir_r * Q.dprs_size),
+    },
+    {
+        "id": "prn",
+        "legend": "PRN,
+        "name": "PRN",
+        "seats": Math.round(Q.prn_r * Q.dprs_size),
     },
     {
         "id": "other",

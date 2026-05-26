@@ -266,6 +266,13 @@ blockquote + blockquote.attribution {
     outline: none;
     padding: 10px;
 }
+#paramilitary_tab {
+  width: 49%;
+}
+#parliament_tab {
+  width: 49%;
+}
+
 .tab_button.active {
     background-color: var(--content-bg-color);
 }
@@ -590,6 +597,12 @@ table {
     fill: #990000;
     stroke: var(--border-color);
     stroke-width: 1.5px;
+}
+.seat.pir {
+    fill: #FF9933;
+}
+.seat.prn {
+    fill: #545454;
 }
 .seat.other {
     fill: #909090;
