@@ -287,6 +287,9 @@ Q.old_psi_r = 6;
 Q.old_psii_r = 10;
 Q.old_kristen_r = 20;
 Q.old_katolik_r = 3;
+Q.old_pir_r = 0;
+Q.old_prn_r = 0;
+Q.old_murba_r = 0;
 Q.old_other_r = 9;
 
 // nu isn't formed yet, but it may be formed
