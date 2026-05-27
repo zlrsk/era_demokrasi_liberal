@@ -267,7 +267,7 @@
 
   window.toggleNews = function toggleNews() {
       const elements = document.querySelectorAll('.global');
-      const elements2 = document.querySelectorAll('.other');
+      const elements2 = document.querySelectorAll('.local');
       const button = document.getElementById('news_tab');
 
       if (!button) {

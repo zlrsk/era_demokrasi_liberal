@@ -3,7 +3,7 @@ subtitle: Various nationalist parties gathers..
 new-page: true
 tags: event
 max-visits: 1
-view-if: nego_natsir = 1
+view-if: year = 2000
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  
