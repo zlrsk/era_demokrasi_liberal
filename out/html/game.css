@@ -1,5 +1,5 @@
 body {
-  --bg-color: #f3f3e3;
+  --bg-color: #f3f3f3;
   --border-color: #000;
   --content-bg-color: #f3f3f3;
   --text-color: #431;
@@ -10,7 +10,7 @@ body {
   --tab-bg-color: #dedede;
   --tab-color: #ddd;
   --tab-hover-color: #ececec;
-  --card-border-color: #1a1a1a; 
+  --card-border-color: #ccc; 
   --card-bg-color: #ddd; 
   font-family: "Minion Pro", Georgia, serif;
   background-color: var(--bg-color);
