@@ -10,6 +10,8 @@ max-visits: 12
 
 = Inter-Party Relationships
 
+WIP
+
 The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet, because we do not have an electoral majority. We can reach out and build additional connections with other parties, or perhaps we can stand alone.
 
 - @islam: The <span style="color: #000000;">Masjumi</span>.
@@ -21,19 +23,37 @@ The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet, be
 
 @pki
 
-- @apologize: -
-- @soviet_ambassador: The <span style="color: #c00000;">**PKI**</span> shares close ties with the <span style="color: #a00000;">**USSR**</span>. 
+- @pki_ties: -
+- @soviet_ambassador: The <span style="color: #c00000;">**PKI**</span> shares close ties with the <span style="color: #a00000;">**USSR**</span>. Perhaps we can use their connections to set up a <span style="color: #a00000;">Soviet</span> Embassy?
+- @joint_rally: We could organize a joint rally with the <span style="color: #c00000;">**PKI**</span>.
+- @org: Collaborate with the <span style="color: #c00000;">**PKI**</span> in social programs.
 
-
-@apologize
+@pki_ties
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3
 
-The <span style="color: #c00000;">**Communists**</span> have always been our close ally, but we never get the chance to be in government together with them. However this may change.
+wip
 
 @soviet_ambassador
+subtitle: -1 resources
+view-if: soviet_ambassador == 0
+choose-if: resources >= 1 and foreign_minister_party == "<span style="color: #990000;font-weight: bold;">PNI</span>" and pki_relation >= 55
+unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?][? if foreign_minister_party != "<span style="color: #990000;font-weight: bold;">PNI</span>": We do not control the Foreign Ministry. ?]
+on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3; ussr_relation += 5; soviet_embassy = 1
+
+@joint_rally
+subtitle: -1 resources
+choose-if: resources >= 1 and pki_relation >= 55
+unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?]
+on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3
+
+Our joint rally was succesfull, many in the crowd were swayed by our combined strength and brotherly cooperation.
+
+@org
+
+wip
 
 @other
 
