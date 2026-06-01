@@ -356,28 +356,25 @@ Q.minority_government = 0;
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
 Q.foreign_minister = 'Mohammad Roem';
-Q.foreign_minister_party = '<span style="color: #000000;font-weight: bold;">M</span>';
+Q.foreign_minister_party = 'M';
 Q.interior_minister = 'Assaat';
 Q.interior_minister_party = 'I';
 Q.justice_minister = 'Wongsonegoro';
-Q.justice_minister_party = '<span style="color: #FF9933;font-weight: bold;">PIR</span>';
+Q.justice_minister_party = 'PIR';
 Q.economic_minister = 'Sumitro Djojohadikusumo';
-Q.economic_minister_party = '<span style="color: #FF6666;font-weight: bold;">PSI</span>';
+Q.economic_minister_party = 'PSI';
 Q.publicworks_minister = 'Herman Johannes';
-Q.publicworks_minister_party = '<span style="color: #FF9933;font-weight: bold;">PIR</span>';
+Q.publicworks_minister_party = 'PIR';
 Q.religious_minister = 'Wahid Hasjim';
-Q.religious_minister_party = '<span style="color: #000000;font-weight: bold;">M</span>';
+Q.religious_minister_party = 'M';
 Q.finance_minister = 'Syafruddin Prawiranegara';
-Q.finance_minister_party = '<span style="color: #000000;font-weight: bold;">M</span>';
+Q.finance_minister_party = 'M';
 Q.education_minister = 'Bahder Djohan';
 Q.education_minister_party = 'I';
 Q.enlightenment_minister = 'M. A. Pellaupessy';
-Q.enlightenment_minister_party = '<span style="color: #003694;">Demokrat</span>';
+Q.enlightenment_minister_party = 'Demokrat';
 
 // Events: what has occurred?
-Q.panmasyumierkreumasyumier_seen = 0;
-Q.panmasyumierkreumasyumier_funded = 0;
-Q.panmasyumierkreumasyumier_failed = 0;
 Q.unemployment_insurance_seen = 0;
 // unemployment insurance event is seen if the unemployment level is at least 4 more than the threshold...
 Q.unemployment_insurance_threshold = 10;
