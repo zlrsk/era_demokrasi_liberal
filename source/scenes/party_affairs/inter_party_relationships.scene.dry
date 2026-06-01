@@ -40,7 +40,7 @@ wip
 subtitle: -1 resources
 view-if: soviet_ambassador == 0
 choose-if: resources >= 1 and foreign_minister_party == '<span style="color: #990000;font-weight: bold;">PNI</span>' and pki_relation >= 55
-unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?][? if foreign_minister_party != '<span style="color: #990000;font-weight: bold;">PNI</span>': We do not control the Foreign Ministry. ?]
+unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?][? if foreign_minister_party != '<span style="color: #990000;font-weight: bold;">PNI</span>' : We do not control the Foreign Ministry. ?]
 on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3; ussr_relation += 5; soviet_embassy = 1
 
 @joint_rally
