@@ -25,18 +25,16 @@ The message has lit up the fire of nationalism and unity within the heart of the
 
 @marhaen
 on-arrival: rural_pni += 4*(1-(partindo_dissent/100)); sidik_strength += 3; partindo_strength += 4; partindo_dissent -= 3;
-face-image: img/soekarno_pni.jpg
 
-<span style="color: #990000;">Marhaenism</span> is a socialistic ideology developed by President Sukarno and the guiding ideology of the <span style="color: #990000;">**PNI**</span>, emphasizing national unity, collectivist economics, and uplifting the rights of the <span class="tooltip-text" title="In his Indonesia Menggugat (Indonesia Accuses) speech in 1930, Sukarno used the term 'Marhaen' referring to the Indonesian agrarian class, replacing the 'Proletariat' as he considered it as irrelevant in Indonesia.">*Marhaens*</span>. 
-
-Our message has greatly reinvigorated the patriotic spirit within the people, especially the agrarian *Marhaens*.
+<img src="img/soekarno_pni.jpg" style="width: 35%;border: 5px solid var(--card-border-color);margin-right: 10px;float: left;">
+<span style="color: #990000;">Marhaenism</span> is a socialistic ideology developed by President Sukarno and the guiding ideology of the <span style="color: #990000;">**PNI**</span>, emphasizing national unity, collectivist economics, and uplifting the rights of the <span class="tooltip-text" title="In his Indonesia Menggugat (Indonesia Accuses) speech in 1930, Sukarno used the term 'Marhaen' referring to the Indonesian agrarian class, replacing the 'Proletariat' as he considered it as irrelevant in Indonesia.">*Marhaens*</span>. Our message has greatly reinvigorated the patriotic spirit within the people, especially the agrarian *Marhaens*.
 
 @democracy
 on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); rural_pni += 3*(1-dissent) if democratization >= 3; middle_pni += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; middle_pni += 4*(1-dissent) if democratization >= 3 
 
 Our speakers defend the <span style="color: #990000;">Socio</span>-Democratic system, promoting the participation of the people both in politics and in the economy, to achieve social justice and prosperity.
 
-[? if democratization < 3 : Talk of democracy does not excite the rural as much as more practical issues, some even criticize it as "western propaganda". But that may change; part of our job is to provide political education to the people. ?]
+[? if democratization < 3 : Talk of democracy does not excite the rural villagers as much as more practical issues, some even criticize it as "western propaganda". But that may change; part of our job is to provide political education to the people. ?]
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the people are enthusiastic about our message. ?]
 
 @pacifism
