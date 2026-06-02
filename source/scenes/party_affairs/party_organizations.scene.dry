@@ -23,12 +23,11 @@ In addition to being a political party, the <span style="color: #990000;">**PNI*
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -2 resources. All major parties have their own affiliated newspaper except for us.
-on-arrival: resources -= 2; newspaper = 1;
+on-arrival: resources -= 2; newspaper = 1; middle_pni += 4*(1 - dissent); rural_pni += 3*(1 - dissent)
 
-{!<div style="display: flex;justify-content: left;">
-<img src="img/suluh.jpeg" style="width: 300px;border: 5px solid var(--card-border-color);margin: 10px"> 
-<div style="width: 300px;">We have launched our own weekly newspaper veritably named "<span class="tooltip-text" title="Torch of Indonesia">*Suluh Indonesia*</span>". We can utilize this as one of our campaign media, effectively garnering support, especially among the middle class.</div>
-</div>!}
+<img src="img/suluh.jpeg" style="width: 35%;border: 5px solid var(--card-border-color);margin: 10px;float: left;">
+We have launched our own weekly newspaper veritably named "<span class="tooltip-text" title="Torch of Indonesia">*Suluh Indonesia*</span>". We can utilize this as one of our campaign media, effectively garnering support, especially among the middle class.</div>
+
 
 @newspapers
 view-if: newspaper = 1
@@ -50,7 +49,6 @@ We have increased funding to Workers' Welfare. [? if black_thursday_seen > 0 : I
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources. We shall support the education of the future generation of patriots.
-face-image: img/taman_siswa.jpg
 on-arrival: resources -= 1; taman_siswa += 1; left_dissent -= 6; center_dissent -= 6; labor_dissent -= 6; reformist_dissent -= 6; 
 
 *Taman Siswa* was founded by Ki Hadjar Dewantara as form of struggle against the colonizers, not through physical struggle nor politics, rather through education and culture. By supporting these schools we can usher in a new generation of bright-minded patriots.
