@@ -25,7 +25,7 @@ unavailable-subtitle: Not enough resources.
 subtitle: -2 resources. All major parties have their own affiliated newspaper except for us.
 on-arrival: resources -= 2; newspaper = 1; middle_pni += 4*(1 - dissent); rural_pni += 3*(1 - dissent)
 
-<img src="img/suluh.jpeg" style="width: 35%;border: 5px solid var(--card-border-color);margin-right: 10px;float: left;">
+<img src="img/suluh.jpeg" style="width: 35%;border: 5px solid var(--card-border-color);margin: 0px 10px 10px 0px;float: left;">
 We have launched our own weekly newspaper veritably named "<span class="tooltip-text" title="Torch of Indonesia">*Suluh Indonesia*</span>". We can utilize this as one of our campaign media, effectively garnering support, especially among the middle class.</div>
 
 
