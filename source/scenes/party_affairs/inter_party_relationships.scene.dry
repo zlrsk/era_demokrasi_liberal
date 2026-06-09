@@ -14,25 +14,26 @@ WIP
 
 The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet, because we do not have an electoral majority. We can reach out and build additional connections with other parties, or perhaps we can stand alone.
 
-- @islam: The <span style="color: #000000;">Masjumi</span>.
-- @pki: The <span style="color: #c00000;">PKI</span>.
+- @islam: The <span style="color: #000000;">**Masjumi**</span>.
+- @pki: The <span style="color: #c00000;">**PKI**</span>.
 - @other: The minor nationalist parties.
-- @nasrani: Work together with the <span style="color: #66B2FF;">Christian</span> and <span style="color: #660000;">Catholic </span>parties.
-- @pni_alone: The <span style="color: #990000;">PNI</span> can stand alone for now.
+- @nasrani: The <span style="color: #66B2FF;">Christian</span> and <span style="color: #660000;">Catholic </span>parties.
+- @pni_alone: The <span style="color: #990000;">**PNI**</span> can stand alone for now.
 - @easy_discard
 
 @pki
 
-- @pki_ties: -
+- @pki_ties: Meet with their leadership to repair our relations.
 - @soviet_ambassador: The <span style="color: #c00000;">**PKI**</span> shares close ties with the <span style="color: #a00000;">**USSR**</span>. Perhaps we can use their connections to set up a <span style="color: #a00000;">Soviet</span> Embassy?
 - @joint_rally: We could organize a joint rally with the <span style="color: #c00000;">**PKI**</span>.
 - @org: Collaborate with the <span style="color: #c00000;">**PKI**</span> in social programs.
+- @interparty: What about the other parties?
 
 @pki_ties
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3
+on-arrival: resources -= 1; pki_relation += 3*(sidik_strength / 10); sidik_strength += 3
 
 wip
 
@@ -41,17 +42,23 @@ subtitle: -1 resources
 view-if: soviet_ambassador == 0
 choose-if: resources >= 1 and foreign_minister_party == 'PNI' and pki_relation >= 55
 unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?][? if foreign_minister_party != 'PNI' : We do not control the Foreign Ministry. ?]
-on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3; ussr_relation += 5; soviet_embassy = 1
+on-arrival: resources -= 1; pki_relation += 4*(sidik_strength / 10); sidik_strength += 3; ussr_relation += 5; soviet_embassy = 1
+
+Thanks to our relations with the <span style="color: #c00000;">**PKI**</span>, we have set up a <span style="color: #a00000;">Soviet</span> embassy in Jakarta. Moscow has assigned Dmitry Zhukov, an experienced diplomat — having served as the ambassador to Chile — to the newly created post.
 
 @joint_rally
 subtitle: -1 resources
 choose-if: resources >= 1 and pki_relation >= 55
 unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?]
-on-arrival: resources -= 1; pki_relation += 5*(1 - dissent); sidik_strength += 3
+on-arrival: resources -= 1; pki_relation += 4*(sidik_strength / 10); sidik_strength += 3
 
 Our joint rally was succesfull, many in the crowd were swayed by our combined strength and brotherly cooperation.
 
 @org
+subtitle: -1 resources
+choose-if: resources >= 1 and pki_relation >= 55
+unavailable-subtitle: [? if resources >= 1: Not enough resources. ?][? if pki_relation < 55: The <span style="color: #c00000;">**PKI**</span> refuses to work with us. ?]
+on-arrival: resources -= 1; pki_relation += 4*(sidik_strength / 10); sidik_strength += 3
 
 wip
 
@@ -120,12 +127,23 @@ unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if wilopo
 on-arrival: resources -= 1; wilopo_strength += 3
 
 @nasrani
+
+- @nasrani_ties: Meet with the leadership of the <span style="color: #66B2FF;">**Parkindo**</span> and the <span style="color: #330000;">**Katolik**</span> Party.
+- @kristen_welfare: -
+- @katolik_welfare: -
+- @interparty: What about the other parties?
+
+@nasrani_ties
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; kristen_relation += 5*(1 - dissent); 
+on-arrival: resources -= 1; kristen_relation += 5*(1 - dissent); katolik_relation += 5*(1 - dissent);
 
 Representing religious minorities, these parties can be reliable partners in regional matters.
+
+@kristen_welfare
+
+@katolik_welfare
 
 @pni_alone
 
