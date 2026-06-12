@@ -323,6 +323,17 @@ Q.pir_in_government = 1;
 Q.prn_in_government = 0;
 Q.murba_in_government = 0;
 
+Q.pni_in_government_1 = 0;
+Q.masyumi_in_government_1 = 0;
+Q.psi_in_government_1 = 0;
+Q.psii_in_government_1 = 0;
+Q.kristen_in_government_1 = 0;
+Q.katolik_in_government_1 = 0;
+Q.pki_in_government_1 = 0;
+Q.pir_in_government_1 = 0;
+Q.prn_in_government_1 = 0;
+Q.murba_in_government_1 = 0;
+
 Q.in_right_coalition = 0;
 // Weimar coalition = pni + masyumi + psi
 Q.in_weimar_coalition = 0;
@@ -373,6 +384,25 @@ Q.education_minister = 'Bahder Djohan';
 Q.education_minister_party = 'I';
 Q.enlightenment_minister = 'M. A. Pellaupessy';
 Q.enlightenment_minister_party = 'Demokrat';
+
+Q.foreign_minister_candidate = 0;
+Q.foreign_minister_party_candidate = 0;
+Q.interior_minister_candidate = 0;
+Q.interior_minister_party_candidate = 0;
+Q.justice_minister_candidate = 0;
+Q.justice_minister_party_candidate = 0;
+Q.economic_minister_candidate = 0;
+Q.economic_minister_party_candidate = 0;
+Q.publicworks_minister_candidate = 0;
+Q.publicworks_minister_party_candidate = 0;
+Q.religious_minister_candidate = 0;
+Q.religious_minister_party_candidate = 0;
+Q.finance_minister_candidate = 0;
+Q.finance_minister_party_candidate = 0;
+Q.education_minister_candidate = 0;
+Q.education_minister_party_candidate = 0;
+Q.enlightenment_minister_candidate = 0;
+Q.enlightenment_minister_party_candidate = 0;
 
 // Events: what has occurred?
 Q.unemployment_insurance_seen = 0;
@@ -643,9 +673,9 @@ This is a game of alternate history. While historical accuracy is a major concer
 For more information on the politics and government of the Republic of Indonesia during the Liberal Democratic Era, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @1951_easy: Begin (easy difficulty)
-- @1951_main: Begin (normal difficulty)
-- @1951_hard: Begin (hard difficulty)
-- @1951_historical: Begin (historical mode)
+- @1951_main: Begin (normal difficulty) (Not Supported)
+- @1951_hard: Begin (hard difficulty) (Not Supported)
+- @1951_historical: Begin (historical mode) (Not Supported)
 
 @1951_easy
 on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; budget = 5;

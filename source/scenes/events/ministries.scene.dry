@@ -6,26 +6,62 @@
 @interior
 title: Interior Ministry
 subtitle: The Interior Ministry controls domestic security.
-unavailable-subtitle: We do not have enough leverage.
 tags: mins_1951
+view-if: interior_minister_party_candidate = 0
+go-to: interior_1
+
+@interior_1
+
+Who shall hold this ministry?
+
+- @interior_pni: We will take this ministry.
+- @interior_m: The <span style="color: #000000;">**Masjumi**</span>.
+- @interior_pir: The <span style="color: #ff9933;">**PIR**</span>
+#- @interior_nu
+- @ministries_pick: Go back.
+
+@interior_pni
+on-arrival: leverage -= 5; interior_minister_party_candidate = "PNI"; interior_minister_candidate = "Iskaq Tjokroadisurjo";
 choose-if: leverage >= 5
-view-if: interior_minister_party != "PNI"
-on-arrival: leverage -= 5; interior_minister_party = "PNI"; interior_minister = "Iskaq Tjokroadisurjo"
+unavailable-subtitle: We do not have enough leverage.
 go-to: ministries_pick
 
-Iskaq Tjokroadisurjo of the PNI has been appointed Interior Minister.
+Iskaq Tjokroadisurjo will be appointed Interior Minister.
+
+interior_m
+on-arrival: interior_minister_party_candidate = "M"; interior_minister_candidate = "Muhammad Roem";
+view-if: masyumi_in_government = 1
+go-to: ministries_pick
+
+Muhammad Roem will be appointed Interior Minister.
+
+interior_pir
+on-arrival: interior_minister_party_candidate = "PIR"; interior_minister_candidate = "Hazairin";
+view-if: pir_in_government = 1
+go-to: ministries_pick
+
+Hazairin will be appointed Interior Minister.
 
 @finance
 title: Finance Ministry
 subtitle: The Finance Ministry controls the government budget and taxes.
-unavailable-subtitle: We do not have enough leverage.
 tags: mins_1951
-choose-if: leverage >= 10 
-view-if: finance_minister_party != "PNI"
-on-arrival: leverage -= 10
+view-if: finance_minister_party_candidate = 0
 go-to: finance_1
 
 @finance_1
+
+Who shall hold this ministry?
+
+- @finance_pni: We will take this ministry
+- @finance_m: The <span style="color: #000000;">**Masjumi**</span>.
+- @finance_psi: The <span style="color: #ff6666;">**PSI**</span>.
+- @ministries_pick: Go back.
+
+@finance_pni
+on-arrival: leverage -= 10
+choose-if: leverage >= 10 
+unavailable-subtitle: We do not have enough leverage.
 
 Who shall be our pick for this ministry?
 
@@ -33,28 +69,52 @@ Who shall be our pick for this ministry?
 - @soetikno: Soetikno Slamet
 
 @ong
-on-arrival: finance_minister_party = "PNI"; finance_minister = "Ong Eng Die"
+on-arrival: finance_minister_party_candidate = "PNI"; finance_minister_candidate = "Ong Eng Die"
 go-to: ministries_pick
 
-Ong Eng Die of the PNI has been appointed Finance Minister.
+Ong Eng Die will be appointed Finance Minister.
 
 @soetikno
-on-arrival: finance_minister_party = "PNI"; finance_minister = "Soetikno Slamet"
+on-arrival: finance_minister_party_candidate = "PNI"; finance_minister_candidate = "Soetikno Slamet"
 go-to: ministries_pick
 
-Soetikno Slamet of the PNI has been appointed Finance Minister.
+Soetikno Slamet will be appointed Finance Minister.
+
+@finance_m
+on-arrival: finance_minister_party_candidate = "M"; finance_minister_candidate = "Jusuf Wibisono"
+go-to: ministries_pick
+
+Jusuf Wibisono will be appointed as Finance Minister
+
+@finance_psi
+on-arrival: finance_minister_party_candidate = "PSI"; finance_minister_candidate = "Sumitro Djojohadikusumo"
+go-to: ministries_pick
+
+Sumitro Djojohadikusumo will be appointed as Finance Minister
 
 @economic
 title: Ministry of Trade and Industry
 subtitle: The Ministry of Trade and Industry controls broader economic policy.
-unavailable-subtitle: We do not have enough leverage.
 tags: mins_1951
-choose-if: leverage >= 10 
-view-if: economic_minister_party != "PNI"
-on-arrival: leverage -= 10
+view-if: economic_minister_party_candidate = 0
 go-to: econ_1
 
 @econ_1
+
+Who shall hold this ministry?
+
+- @econ_pni: We will take this ministry.
+#- @econ_m: The <span style="color: #000000;">**Masjumi**</span>.
+- @econ_psi: The <span style="color: #ff9999;">**PSI**</span>.
+- @econ_katolik: The <span style="color: #330000;">**Katolik**</span> Party.
+- @econ_pir: The <span style="color: #ff9933;">**PIR**</span>
+#- econ_nu
+- @ministries_pick: Go back.
+
+@econ_pni
+on-arrival: leverage -= 10
+choose-if: leverage >= 10 
+unavailable-subtitle: We do not have enough leverage.
 
 Who shall be our pick for this ministry?
 
@@ -62,16 +122,34 @@ Who shall be our pick for this ministry?
 - @wilopo: Wilopo
 
 @sujono 
-on-arrival: economic_minister_party = "PNI"; economic_minister = "Sujono Hadinoto"
+on-arrival: economic_minister_party_candidate = "PNI"; economic_minister_candidate = "Sujono Hadinoto"
 go-to: ministries_pick
 
-Sujono Hadinoto of the PNI has been appointed Minister of Trade and Industry.
+Sujono Hadinoto will be appointed Minister of Trade and Industry.
 
 @wilopo 
-on-arrival: economic_minister_party = "PNI"; economic_minister = "Wilopo"
+on-arrival: economic_minister_part_candidate = "PNI"; economic_minister_candidate = "Wilopo"
 go-to: ministries_pick
 
-Wilopo of the PNI has been appointed Minister of Trade and Industry.
+Wilopo will be appointed Minister of Trade and Industry.
+
+@econ_psi
+on-arrival: economic_minister_party_candidate = "PSI"; economic_minister_candidate = "Sumitro Djojohadikusumo"
+go-to: ministries_pick
+
+Sumitro Djojohadikusumo will be appointed Minister of Trade and Industry.
+
+@econ_katolik
+on-arrival: economic_minister_party_candidate = "Katolik"; economic_minister_candidate = "I. J. Kasimo"
+go-to: ministries_pick
+
+I. J. Kasimo will be appointed Minister of Trade and Industry.
+
+@econ_pir
+on-arrival: economic_minister_party_candidate = "PIR"; economic_minister_candidate = "Rooseno Surjohadikusumo"
+go-to: ministries_pick
+
+Rooseno Surjohadikusumo will be appointed Minister of Trade and Industry.
 
 @justice
 title: Justice Ministry
@@ -94,13 +172,13 @@ Who shall be our pick for this ministry?
 on-arrival: justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo"
 go-to: ministries_pick
 
-Susanto Tirtoprodjo of the PNI has been appointed Justice Minister.
+Susanto Tirtoprodjo will be appointed Justice Minister.
 
 @gustaf
 on-arrival: justice_minister_party = "PNI"; justice_minister = "Gustaaf Adolf Maengkom"
 go-to: ministries_pick
 
-Gustaaf Adolf Maengkom of the PNI has been appointed Justice Minister.
+Gustaaf Adolf Maengkom will be appointed Justice Minister.
 
 @foreign
 title: Foreign Ministry
@@ -123,19 +201,19 @@ Who shall be our pick for this ministry?
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Soenario Sastrowardoyo"
 go-to: ministries_pick
 
-Soenario Sastrowardoyo of the PNI has been appointed Foreign Minister.
+Soenario Sastrowardoyo will be appointed Foreign Minister.
 
 @mukarto
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Moekarto Notowidigdo"
 go-to: ministries_pick
 
-Moekarto Notowidigdo of the PNI has been appointed Foreign Minister.
+Moekarto Notowidigdo will be appointed Foreign Minister.
 
 @ruslan
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Roeslan Abdoelgani"
 go-to: ministries_pick
 
-Roeslan Abdoelgani of the PNI has been appointed Foreign Minister.
+Roeslan Abdoelgani will be appointed Foreign Minister.
 
 @religious
 title: Ministry of Religious Affairs
@@ -156,7 +234,7 @@ view-if: reichswehr_minister_party != "PNI"
 on-arrival: leverage -= 10; reichswehr_minister_party = "PNI"; reichswehr_minister = "Leber"
 go-to: ministries_pick
 
-Julius Leber of the PNI has been appointed Reichswehr Minister.
+Julius Leber will be appointed Reichswehr Minister.
 
 @education
 title: Ministry of Education
@@ -168,7 +246,7 @@ view-if: education_minister_party != "PNI"
 on-arrival: leverage -= 5; education_minister_party = "PNI"; education_minister = "Ki Sarmidi Mangunsarkoro"
 go-to: ministries_pick
 
-Ki Sarmidi Mangunsarkoro of the PNI has been appointed Minister of Education.
+Ki Sarmidi Mangunsarkoro will be appointed Minister of Education.
 
 @enlightenment
 title: Enlightenment Ministry
@@ -180,7 +258,7 @@ view-if: enlightenment_minister_party != "PNI"
 on-arrival: leverage -= 10; enlightenment_minister_party = "PNI"; enlightenment_minister = "Arnold Mononutu"
 go-to: ministries_pick
 
-Arnold Mononutu of the PNI has been appointed Justice Minister.
+Arnold Mononutu will be appointed Justice Minister.
 
 @no_more
 title: No more ministries.

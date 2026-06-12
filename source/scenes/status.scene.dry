@@ -234,12 +234,18 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 = Government 
 
-<div style="text-align: center;">President: [+ president +]</div>
-<div style="text-align: center;">Vice-President: [+ vice_pres +]</div>
-<div style="display: flex;gap: 5px;margin-bottom: 5px;margin-left: -3px;justify-content: center;">
+<div style="display: flex;justify-content: left;">
+<div style="text-align: center;width: 50%;">President</div>
+<div style="text-align: center;width: 50%;">Vice-President</div>
+</div>
+<div style="display: flex;gap: 5px;margin-top: 5px;margin-bottom: 5px;margin-left: -3px;justify-content: center;">
 <img src="img/portraits/soekarno.jpg" alt="Soekarno" style="width: 45%;border: 5px solid var(--card-border-color);"> 
 <img src="img/portraits/hatta.jpg" alt="Hatta" style="width: 45%;border: 5px solid var(--card-border-color);"> 
 </div> 
+<div style="display: flex;justify-content: left;">
+<div style="text-align: center;width: 50%;">**[+ president +]**</div>
+<div style="text-align: center;width: 50%;">**[+ vice_pres +]**</div>
+</div>
 
 = Cabinet
 
