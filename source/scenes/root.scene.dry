@@ -308,10 +308,11 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Soekarno";
+Q.president = "Sukarno";
 Q.vice_pres = "Hatta";
-Q.chancellor = "Muhammad Natsir";
+Q.chancellor = "Mohammad Natsir";
 Q.chancellor_party = 'Masyumi';
+Q.deputy_pm_count = 1;
 Q.pni_in_government = 0;
 Q.masyumi_in_government = 1;
 Q.psi_in_government = 1;
@@ -364,8 +365,12 @@ Q.pni_toleration = 0;
 Q.minority_government = 0;
 
 // ministries - which parties control the ministries?
-// starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
-// is the agricultural ministry useful at all?
+Q.deputy_pm = 'Sri Sultan Hamengkubuwana IX';
+Q.deputy_pm_party = 'I';
+Q.deputy_pm_2 = 0;
+Q.deputy_pm_2_party = 0;
+Q.deputy_pm_3 = 0;
+Q.deputy_pm_3_party = 0;
 Q.foreign_minister = 'Mohammad Roem';
 Q.foreign_minister_party = 'M';
 Q.interior_minister = 'Assaat';
@@ -385,6 +390,12 @@ Q.education_minister_party = 'I';
 Q.enlightenment_minister = 'M. A. Pellaupessy';
 Q.enlightenment_minister_party = 'Demokrat';
 
+Q.deputy_pm_candidate = 0;
+Q.deputy_pm_party_candidate = 0;
+Q.deputy_pm_2_candidate = 0;
+Q.deputy_pm_2_party_candidate = 0;
+Q.deputy_pm_3_candidate = 0;
+Q.deputy_pm_3_party_candidate = 0;
 Q.foreign_minister_candidate = 0;
 Q.foreign_minister_party_candidate = 0;
 Q.interior_minister_candidate = 0;
