@@ -310,7 +310,7 @@ Q.economic_records = [];
 // State of the government
 Q.president = "Soekarno";
 Q.vice_pres = "Hatta";
-Q.chancellor = "Natsir";
+Q.chancellor = "Muhammad Natsir";
 Q.chancellor_party = 'Masyumi';
 Q.pni_in_government = 0;
 Q.masyumi_in_government = 1;
