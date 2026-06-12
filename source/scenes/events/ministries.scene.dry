@@ -28,14 +28,14 @@ go-to: ministries_pick
 
 Iskaq Tjokroadisurjo will be appointed Interior Minister.
 
-interior_m
+@interior_m
 on-arrival: interior_minister_party_candidate = "M"; interior_minister_candidate = "Muhammad Roem";
 view-if: masyumi_in_government = 1
 go-to: ministries_pick
 
 Muhammad Roem will be appointed Interior Minister.
 
-interior_pir
+@interior_pir
 on-arrival: interior_minister_party_candidate = "PIR"; interior_minister_candidate = "Hazairin";
 view-if: pir_in_government = 1
 go-to: ministries_pick
