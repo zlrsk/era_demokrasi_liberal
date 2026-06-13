@@ -104,8 +104,11 @@ if (Q.month_actions >= 1) {
     if (Q.month >= 13) {
         Q.month = 1;
         Q.year += 1;
-        if (Q.historical_mode) {
-            Q.resources += 2;
+        Q.resources += Q.dues;
+        if (Q.dissent_percent < 5) {
+            Q.resources += 1;
+        } else if (Q.dissent_percent > 30) {
+            Q.resources -= 1;
         }
     }
     // decrement timers

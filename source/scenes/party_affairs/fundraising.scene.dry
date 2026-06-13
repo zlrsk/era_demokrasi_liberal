@@ -1,7 +1,7 @@
 title: Fundraising
 new-page: true
 view-if: fundraising_timer <= 0 and (not historical_mode)
-on-arrival: fundraising_timer = 6; month_actions += 1
+on-arrival: fundraising_timer = 6
 frequency: 300
 is-card: true
 card-image: img/money.png
@@ -9,31 +9,40 @@ tags: party_affairs
 
 = Fundraising
 
+@money
+
 For better or for worse, the party cannot exist without money.
+
+- @dues: Adjust yearly member dues.
+- @aristocrat: Seek financial backing from the wealthy aristocrats. WIP
+
+@dues
+
+Party treasury may adjust the yearly dues of grassroots members.
 
 - @maintain: Maintain our current dues.
 - @reduce: Reduce dues.
 - @increase: Increase dues.
 
 @maintain
-subtitle: [+ dues +] resources gained.
-on-arrival: resources += dues;
+subtitle: We gain [+ dues +] resources per year.
 
 We maintain our current dues.
 
 @reduce
-subtitle: [+ dues - 1 +] resources gained.
+subtitle: We will gain [+ dues - 1 +] resources per year. -1 resource
 choose-if: dues > 1
-on-arrival: dues -= 1; resources += dues; left_dissent -= 8; center_dissent -= 8; reformist_dissent -= 8; labor_dissent -= 8
+on-arrival: dues -= 1; resources -= 1; wilopo_dissent -= 8; partindo_dissent -= 8; sidik_dissent -= 8; month_actions += 1
 
 Our current members appreciate this, but no one decides to join a party because of the low dues.
 
 @increase
-subtitle: [+ dues + 1 +] resources gained. [? if unemployed >= 15 : Given the present economic situation, this may be painful. ?][? if dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
-on-arrival: dues += 1; resources += dues; workers_spd -= 3; unemployed_spd -= 3; workers_spd -= 10 if unemployed >= 15; unemployed_spd -= 10 if unemployed >= 15; workers_spd -= 3*dues if dues >= 5; unemployed_spd -= 3*dues if dues >= 5
+subtitle: We will gain [+ dues + 1 +] resources per year. +1 resource [? if unemployed >= 15 : Given the present economic situation, this may be painful. ?][? if dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
+on-arrival: dues += 1; resources += 1; rural_pni -= 3; middle_pni -= 3; rural_pni -= 10 if unemployed >= 15; middle_pni -= 10 if unemployed >= 15; rural_pni -= 3*dues if dues >= 5; middle_pni -= 3*dues if dues >= 5; month_actions += 1
 view-if: dues <= 4
 
 Our members grumble at this, and some of the less committed members leave. But now, we have access to additional resources. 
 
 [? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?]
 
+@aristocrat
