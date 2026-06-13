@@ -8,7 +8,7 @@ view-if: sarmidi_advisor = 1
 
 = Sarmidi Mangunsarkoro
 
-Sarmidi Mangunsarkoro was born in Surakarta on May 23, 1904; he was educated at a teachers' school, and spent the major part of his early days as a Taman Siswa teacher. He later headed the education section of the Central Headquarters of the Djawa Hookookai. Before the war, Sarmidi was a member of the PNI and later both Partindo and Gerindo. He was the general secretary of Serindo in 1945, and, at the fusion congress in February 1946, he was elected chairman of the PNI. He was replaced by A. K. Gani as chairman in March 1947. He is currently holding various positions in the top party leadership.
+Sarmidi Mangunsarkoro was born in Surakarta on May 23, 1904; he was educated at a teachers' school, and spent the major part of his early days as a *Taman Siswa* teacher. He was elected chairman of the <span style="color: #990000;">**PNI**</span> at the fusion congress in 1946 until March 1947 where he was replaced by A. K. Gani. Thanks to his experience, he has been the <span style="color: #990000;">**PNI**</span>'s expert on national education and is currently holding various positions in the party leadership.
 
 - @education
 - @emergency_fundraising
@@ -36,11 +36,12 @@ on-arrival: advisor_action_timer = 6; resources += dues
 
 We have gained +[+ dues +] resources.
 
-@snap_election
-title: Snap Election
-subtitle: Call a snap election.
-unavailable-subtitle: [? if chancellor != "Müller" : Müller must be Chancellor. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer == 0 and chancellor == "Müller"
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12;
+@taman_siswa
+title: Donate to the *Taman Siswa* schools.
+subtitle: We shall support the education of the future generation of patriots.
+on-arrival: taman_siswa += 1; sidik_dissent -= 6; wilopo_dissent -= 6; partindo_dissent -= 6; advisor_action_timer = 6;
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
 
-We have called for new elections, set for [+ next_election_month : month +] [+ next_election_year +].
+<img src="img/taman_siswa.jpg" style="width: 35%;border: 5px solid var(--card-border-color);margin: 0px 10px 10px 0px;float: left;">
+*Taman Siswa* was founded by Ki Hadjar Dewantara as form of struggle against the colonizers, not through physical struggle nor politics, rather through education and culture. By supporting these schools we can usher in a new generation of bright-minded patriots.

@@ -49,8 +49,9 @@ We have increased funding to Workers' Welfare. [? if black_thursday_seen > 0 : I
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources. We shall support the education of the future generation of patriots.
-on-arrival: resources -= 1; taman_siswa += 1; left_dissent -= 6; center_dissent -= 6; labor_dissent -= 6; reformist_dissent -= 6; 
+on-arrival: resources -= 1; taman_siswa += 1; sidik_dissent -= 6; wilopo_dissent -= 6; partindo_dissent -= 6;
 
+<img src="img/taman_siswa.jpg" style="width: 35%;border: 5px solid var(--card-border-color);margin: 0px 10px 10px 0px;float: left;">
 *Taman Siswa* was founded by Ki Hadjar Dewantara as form of struggle against the colonizers, not through physical struggle nor politics, rather through education and culture. By supporting these schools we can usher in a new generation of bright-minded patriots.
 
 #to do: boost overall national education
