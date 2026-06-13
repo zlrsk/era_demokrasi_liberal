@@ -3,11 +3,10 @@ subtitle: The <span style="color: #c00000;">**PKI**</span> Under New Leadership?
 new-page: true
 tags: event
 max-visits: 1
+face-image: img/old-pki.jpg
 view-if: year == 1951 and month >= 1
 
 = Fifth <span style="color: #c00000;">**PKI**</span> Congress
-
-<img src="img/old-pki.jpg" style="width: 100%;border: 5px solid var(--card-border-color);margin: auto;margin-bottom: 5px;">
 
 Ever since the 1948 Madiun Uprising, which resulted in the death of its principal leaders, the <span style="color: #c00000;">**PKI**</span> has been in a position of semi-illegality, and labeled as a traitor to the Republic's unity during the struggle period. In addition, its member count has been diminished to a mere three thousand and has been pushed to insignificance.
 
