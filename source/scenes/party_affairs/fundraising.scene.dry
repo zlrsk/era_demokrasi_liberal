@@ -9,8 +9,6 @@ tags: party_affairs
 
 = Fundraising
 
-@money
-
 For better or for worse, the party cannot exist without money.
 
 - @dues: Adjust yearly member dues.
@@ -23,6 +21,7 @@ Party treasury may adjust the yearly dues of grassroots members.
 - @maintain: Maintain our current dues.
 - @reduce: Reduce dues.
 - @increase: Increase dues.
+- @back: Back
 
 @maintain
 subtitle: We gain [+ dues +] resources per year.
@@ -45,4 +44,9 @@ Our members grumble at this, and some of the less committed members leave. But n
 
 [? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?]
 
+@back
+go-to: fundraising
+
 @aristocrat
+
+WIP
