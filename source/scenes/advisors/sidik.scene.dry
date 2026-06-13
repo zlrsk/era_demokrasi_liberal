@@ -8,7 +8,7 @@ new-page: true
 
 = Sidik Djojosukarto
 
-Sidik Djojosukarto was born in Blitar, East Java, on June 7, 1908. He served as head of the <span style="color: #990000;">**PNI**</span> in East Java from 1945 to 1949, when he became acting chairman of the party replacing Sujono Hadinoto. [? if pni_leader == "Sidik Djojosukarto": He is the current party chairman since his reelection at the Fourth Party Congress in May 1950. ?][? if pni_leader == "Sidik Djojosukarto": He was the party chairman since his reelection at the Fourth Party Congress in May 1950 until his resignation on September, 1955. ?] He is a charismatic organizer and a widely respected figure within the <span style="color: #990000;">**PNI**</span>.
+Sidik Djojosukarto was born in Blitar, East Java, on June 7, 1908. He served as head of the <span style="color: #990000;">**PNI**</span> in East Java from 1945 to 1949, when he became acting chairman of the party replacing Sujono Hadinoto. [? if pni_leader == "Sidik Djojosukarto": He is the current party chairman since his reelection at the Fourth Party Congress in May 1950. ?][? if pni_leader != "Sidik Djojosukarto": He was the party chairman since his reelection at the Fourth Party Congress in May 1950 until his resignation on September, 1955. ?] He is a charismatic organizer and a widely respected figure within the <span style="color: #990000;">**PNI**</span>.
 
 
 - @clear_agenda
