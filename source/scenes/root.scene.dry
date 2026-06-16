@@ -672,7 +672,7 @@ const data = [
 
 Q.parliament_diagram = data
 !}
-set-bg: img/map_2.jpg
+set-bg: img/map_2.png
 new-page: true
 
 > *"The necessity of deliberately allowing and encouraging the instability of society [...] We welcome this social instability because it provides the opportunity to progress. Progress positively demands an element of instability and even of risk."*
