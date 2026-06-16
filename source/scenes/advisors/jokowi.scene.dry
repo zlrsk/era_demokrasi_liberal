@@ -1,0 +1,27 @@
+title: The Man From Solo
+is-pinned-card: true
+tags: advisor
+card-image: img/portraits/jokowi.jpg
+view-if: jokowi_advisor = 1
+new-page: true
+
+= HIDUP JOKOWI
+
+debug
+
+- @end_game
+- @election
+- @ministries
+- @root: Return to main
+
+@end_game
+title: end
+go-to: 1934_end
+
+@election
+title: election test
+go-to: election_1928
+
+@ministries
+title: ministries
+go-to: ministries.ministries_pick
