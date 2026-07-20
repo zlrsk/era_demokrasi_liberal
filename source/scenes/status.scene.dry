@@ -59,47 +59,27 @@ Economic growth: [+ economic_growth_2 +]%
 
 @politics
 
-= Inter-party Relations
+= Inter-party Politics
 
-<img src="img/icons/masjumi.png" style="height: 10px;"> {!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_relation : relationships +]
+<img src="img/icons/PNI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian National Party" style="color: #990000;"><strong>PNI</strong></span>!} <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
 
-<img src="img/icons/PSI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: [+ psi_relation : relationships +]
+<img src="img/icons/masjumi.png" style="height: 10px;"> {!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!} <br>Leader: [+ masyumi_leader +] <br>Ideology: [+ masyumi_ideology1 +] <br>Relations: [+ masyumi_relation : relationships +]
 
-<img src="img/icons/PSII.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: [+ psii_relation : relationships +]
+<img src="img/icons/PSI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!} <br>Leader: Sutan Sjahrir <br>Ideology: Popular Socialism <br>Relations: [+ psi_relation : relationships +]
 
-<img src="img/icons/PKI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_relation : relationships +]
+<img src="img/icons/PSII.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!} <br>Leader: Anwar Tjokroaminoto <br>Ideology: Political Islam <br>Relations: [+ psii_relation : relationships +]
 
-<img src="img/icons/kristen.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Christian Party (Protestant)" style="color: #66B2FF;"><strong>Parkindo</strong></span>!}: [+ kristen_relation : relationships +]
+<img src="img/icons/PKI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!} <br>Leader: [+ pki_leader +] <br>Ideology: [+ pki_ideology +] <br>Relations: [+ pki_relation : relationships +]
 
-<img src="img/icons/katolik.png" style="height: 10px;"> {!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: [+ katolik_relation : relationships +]
+<img src="img/icons/kristen.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Christian Party (Protestant)" style="color: #66B2FF;"><strong>Parkindo</strong></span>!} <br>Leader: Johannes Leimena <br>Ideology: Protestant Interests <br>Relations: [+ kristen_relation : relationships +]
 
-<img src="img/icons/PIR.png" style="height: 10px;"> {!<span class="tooltip-text" title="Greater Indonesia Union Party" style="color: #FF9933;"><strong>PIR</strong></span>!}: [+ pir_relation : relationships +]
+<img src="img/icons/katolik.png" style="height: 10px;"> {!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!} <br>Leader: I. J. Kasimo <br>Ideology: Catholic Interests <br>Relations: [+ katolik_relation : relationships +]
 
-<img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!}: [+ prn_relation : relationships +]
+<img src="img/icons/PIR.png" style="height: 10px;"> {!<span class="tooltip-text" title="Greater Indonesia Union Party" style="color: #FF9933;"><strong>PIR</strong></span>!} <br>Leader: Wongsonegoro <br>Ideology: Nationalism <br>Relations: [+ pir_relation : relationships +]
 
-<img src="img/icons/murba.png" style="height: 10px;"> {!<span class="tooltip-text" title="Proletarian Party" style="color: #ff3333;"><strong>Murba</strong></span>!}: [+ murba_relation : relationships +]
+<img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!} <br>Leader: Djody Gondokusumo <br>Ideology: Right-wing Nationalism <br>Relations: [+ prn_relation : relationships +]
 
-=Party Leadership
-
-<img src="img/icons/PNI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian National Party" style="color: #990000;"><strong>PNI</strong></span>!}: [+ pni_leader +] (Marhaenism)
-
-<img src="img/icons/masjumi.png" style="height: 10px;"> {!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masjumi</strong></span>!}: [+ masyumi_leader +] ([+ masyumi_ideology1 +])
-
-<img src="img/icons/PSI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: Sutan Sjahrir (Popular Socialism)
-
-<img src="img/icons/PSII.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: Anwar Tjokroaminoto (Islamic Democracy)
-
-<img src="img/icons/PKI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_leader +] ([+ pki_ideology +])
-
-<img src="img/icons/kristen.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian Christian Party (Protestant)" style="color: #66B2FF;"><strong>Parkindo</strong></span>!}: Johannes Leimena (Christian Democracy)
-
-<img src="img/icons/katolik.png" style="height: 10px;"> {!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: I. J. Kasimo (Catholic Democracy)
-
-<img src="img/icons/PIR.png" style="height: 10px;"> {!<span class="tooltip-text" title="Greater Indonesia Union Party" style="color: #FF9933;"><strong>PIR</strong></span>!}: Wongsonegoro (Nationalism)
-
-<img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!}: Djody Gondokusumo (Right-wing Nationalism)
-
-<img src="img/icons/murba.png" style="height: 10px;"> {!<span class="tooltip-text" title="Proletarian Party" style="color: #ff3333;"><strong>Murba</strong></span>!}: Sukarni (Tan Malaka Thought)
+<img src="img/icons/murba.png" style="height: 10px;"> {!<span class="tooltip-text" title="Proletarian Party" style="color: #ff3333;"><strong>Murba</strong></span>!} <br>Leader: Sukarni <br>Ideology: Tan Malaka Thought <br>Relations: [+ murba_relation : relationships +]
 
 @polls
 on-arrival: {!
