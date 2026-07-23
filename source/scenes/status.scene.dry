@@ -17,9 +17,9 @@ if (Q.economic_growth) {
 
 = <span style="color: #990000;">**PNI**</span> Leadership
 
-<div style="text-align: center;">Chairman</div>
 [? if pni_leader == "Sidik Djojosukarto": <div><img src="img/portraits/sidik.jpg" alt="Sidik Djojosukarto" style="width: 50%;display: block;margin-top: 5px;margin: auto;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ pni_leader +]**</div>
+<div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Chairman*</div>
 
 Deputy Chairman: <br>[+ vice_chair +]</div>
 
@@ -205,10 +205,6 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 = Government 
 
-<div style="display: flex;justify-content: left;">
-<div style="text-align: center;width: 50%;">President</div>
-<div style="text-align: center;width: 50%;">Vice-President</div>
-</div>
 <div style="display: flex;gap: 5px;margin-top: 5px;margin-bottom: 5px;margin-left: -3px;justify-content: center;">
 <img src="img/portraits/soekarno.jpg" alt="Soekarno" style="width: 45%;border: 5px solid var(--card-border-color);"> 
 <img src="img/portraits/hatta.jpg" alt="Hatta" style="width: 45%;border: 5px solid var(--card-border-color);"> 
@@ -217,12 +213,16 @@ Support for the Republic: [+ pro_republic_disp +]%
 <div style="text-align: center;width: 50%;">**[+ president +]**</div>
 <div style="text-align: center;width: 50%;">**[+ vice_pres +]**</div>
 </div>
+<div style="display: flex;justify-content: left;">
+<div style="text-align: center;width: 50%;color: var(--unavailable-color);font-size: 0.8em;">*President*</div>
+<div style="text-align: center;width: 50%;color: var(--unavailable-color);font-size: 0.8em;">*Vice President*</div>
+</div>
 
 = Cabinet
 
-<div style="text-align: center;">Prime Minister</div>
 [? if chancellor == "Mohammad Natsir": <div><img src="img/portraits/natsir.jpg" alt="Natsir" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?][? if chancellor == "Susanto": <div><img src="img/portraits/susanto.jpg" alt="Susanto" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ chancellor +]** ([? if chancellor_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if chancellor_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
+<div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Prime Minister*</div>
 
 [? if deputy_pm_count > 1: First ?]Deputy Prime Minister: <br>[+ deputy_pm +] ([? if deputy_pm_party == "PNI": <span style="color: #990000;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "M": <span style="color: #000000;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "Murba": <span style="color: #ff3333;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "PSI": <span style="color: #ff9999;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "PSII": <span style="color: #003319;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "PNI": <span style="color: #990000;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "Parkindo": <span style="color: #66b2ff;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "Katolik": <span style="color: #330000;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "PIR": <span style="color: #ff9933;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "PRN": <span style="color: #545454;font-weight: bold;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "Demokrat": <span style="color: #003694;">[+ deputy_pm_party +]</span>?][? if deputy_pm_party == "I": <span style="font-weight: bold;">[+ deputy_pm_party +]</span>?])
 
@@ -275,7 +275,7 @@ if (d3 && window && Q.started) {
 
 [? if dprs_speaker == "Sartono": <div><img src="img/portraits/sartono.jpg" alt="Sartono" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ dprs_speaker +]** ([? if dprs_speaker_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if dprs_speaker_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
-<div style="text-align: center;color: var(--unavailable-color);font-size: 0.75em;">*Speaker*</div>
+<div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Speaker*</div>
 
 <div style="margin: auto;">{!<svg id="reichstag_st" style="width: 550px; height: 275px;"> </svg>!}</div>
 
