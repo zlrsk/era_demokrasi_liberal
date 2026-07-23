@@ -466,6 +466,45 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
   object-fit: cover;
 }
 
+/* Leader/party-head portrait card, shown above the Decks section */
+.leader-card {
+  text-align: center;
+  padding: 1em 1.2em 1.5em 1.2em;
+  margin-bottom: 1em;
+  background-color: var(--content-bg-color);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  clear: both;
+}
+.leader-card .leader-party {
+  font-size: 1.3em;
+  font-weight: normal;
+  margin: 0 0 0.75em 0;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid var(--border-color);
+}
+.leader-card .leader-abbr {
+  font-weight: bold;
+  color: #D40000;
+}
+.leader-card .leader-portrait {
+  display: block;
+  margin: 0 auto 0.5em auto;
+  width: 170px;
+  height: 210px;
+  object-fit: cover;
+  border: 5px solid var(--card-border-color);
+}
+.leader-card .leader-name {
+  font-weight: bold;
+  margin: 0;
+}
+.leader-card .leader-role {
+  color: var(--unavailable-color);
+  font-style: italic;
+  margin: 0;
+}
+
+
 /*
  * sprite stuff- feel free to comment out/remove if not using
  */
