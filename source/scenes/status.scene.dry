@@ -249,6 +249,18 @@ Minister of Education: <br>[+ education_minister +] ([? if education_minister_pa
 Minister of Religious Affairs: <br>[+ religious_minister +] ([? if religious_minister_party == "PNI": <span style="color: #990000;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "M": <span style="color: #000000;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "Murba": <span style="color: #ff3333;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "PSI": <span style="color: #ff9999;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "PSII": <span style="color: #003319;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "PNI": <span style="color: #990000;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "Parkindo": <span style="color: #66b2ff;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "Katolik": <span style="color: #330000;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "PIR": <span style="color: #ff9933;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "PRN": <span style="color: #545454;font-weight: bold;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "Demokrat": <span style="color: #003694;">[+ religious_minister_party +]</span>?][? if religious_minister_party == "I": <span style="font-weight: bold;">[+ religious_minister_party +]</span>?])
 
 @parliament
+on-arrival: {!
+Q.pni_seats = Math.round(Q.pni_r*2.32);
+Q.pki_seats = Math.round(Q.pki_r*2.32);
+Q.murba_seats = Math.round(Q.murba_r*2.32);
+Q.psi_seats = Math.round(Q.psi_r*2.32);
+Q.pir_seats = Math.round(Q.pir_r*2.32);
+Q.prn_seats = Math.round(Q.prn_r*2.32);
+Q.kristen_seats = Math.round(Q.kristen_r*2.32);
+Q.katolik_seats = Math.round(Q.katolik_r*2.32);
+Q.psii_seats = Math.round(Q.psii_r*2.32);
+Q.masyumi_seats = Math.round(Q.masyumi_r*2.32);
+!}
 on-display: {!
 data = Q.parliament_diagram;
 if (d3 && window && Q.started) {
@@ -280,24 +292,24 @@ if (d3 && window && Q.started) {
 <div style="margin: auto;">{!<svg id="reichstag_st" style="width: 550px; height: 275px;"> </svg>!}</div>
 
 {!<table>!} 
-{!<tr><td>Party</td><td>% of Seats</td><td>Status</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#990000; outline: 2px; outline-style: solid;'> </div> !} **PNI:** {!</td><td>!} **[+ pni_r +]%** {!</td><td>!} [? if pni_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if pni_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td>Party</td><td>Seats</td><td>Status</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#990000; outline: 2px; outline-style: solid;'> </div> !} **PNI:** {!</td><td>!} **[+ pni_seats +] ([+ pni_r +]%)** {!</td><td>!} [? if pni_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if pni_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#c00000'> </div> !} PKI: {!</td><td>!} [+ pki_r +]% {!</td><td>!} [? if pki_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if pki_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#c00000'> </div> !} PKI: {!</td><td>!} [+ pki_seats +] ([+ pki_r +]%) {!</td><td>!} [? if pki_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if pki_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FF3333'> </div> !} Murba: {!</td><td>!} [+ murba_r +]% {!</td><td>!} [? if murba_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if murba_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF3333'> </div> !} Murba: {!</td><td>!} [+ murba_seats +] ([+ murba_r +]%) {!</td><td>!} [? if murba_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if murba_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FF6666'> </div> !} PSI: {!</td><td>!} [+ psi_r +]% {!</td><td>!} [? if psi_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if psi_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF6666'> </div> !} PSI: {!</td><td>!} [+ psi_seats +] ([+ psi_r +]%) {!</td><td>!} [? if psi_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if psi_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FF9933'> </div> !} PIR: {!</td><td>!} [+ pir_r +]% {!</td><td>!} [? if pir_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if pir_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF9933'> </div> !} PIR: {!</td><td>!} [+ pir_seats +] ([+ pir_r +]%) {!</td><td>!} [? if pir_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if pir_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#545454'> </div> !} PRN: {!</td><td>!} [+ prn_r +]% {!</td><td>!} [? if prn_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if prn_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#545454'> </div> !} PRN: {!</td><td>!} [+ prn_seats +] ([+ prn_r +]%) {!</td><td>!} [? if prn_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if prn_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#66B2FF'> </div> !} Parkindo: {!</td><td>!} [+ kristen_r +]% {!</td><td>!} [? if kristen_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if kristen_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#66B2FF'> </div> !} Parkindo: {!</td><td>!} [+ kristen_seats +] ([+ kristen_r +]%) {!</td><td>!} [? if kristen_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if kristen_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#330000'> </div> !} Katolik: {!</td><td>!} [+ katolik_r +]% {!</td><td>!} [? if katolik_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if katolik_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#330000'> </div> !} Katolik: {!</td><td>!} [+ kristen_seats +] ([+ katolik_r +]%) {!</td><td>!} [? if katolik_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if katolik_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#003319'> </div> !} PSII: {!</td><td>!} [+ psii_r +]% {!</td><td>!} [? if psii_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if psii_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#003319'> </div> !} PSII: {!</td><td>!} [+ psii_seats +] ([+ psii_r +]%) {!</td><td>!} [? if psii_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if psii_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div> !} Masjumi: {!</td><td>!} [+ masyumi_r +]% {!</td><td>!} [? if masyumi_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if masyumi_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000'> </div> !} Masjumi: {!</td><td>!} [+ masyumi_seats +] ([+ masyumi_r +]%) {!</td><td>!} [? if masyumi_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if masyumi_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 {!</table>!}
