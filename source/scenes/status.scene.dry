@@ -307,7 +307,7 @@ if (d3 && window && Q.started) {
 
 {!<tr><td><div class="box" style='background-color:#66B2FF'> </div> !} Parkindo: {!</td><td>!} [+ kristen_seats +] ([+ kristen_r +]%) {!</td><td>!} [? if kristen_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if kristen_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#330000'> </div> !} Katolik: {!</td><td>!} [+ kristen_seats +] ([+ katolik_r +]%) {!</td><td>!} [? if katolik_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if katolik_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#330000'> </div> !} Katolik: {!</td><td>!} [+ katolik_seats +] ([+ katolik_r +]%) {!</td><td>!} [? if katolik_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if katolik_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#003319'> </div> !} PSII: {!</td><td>!} [+ psii_seats +] ([+ psii_r +]%) {!</td><td>!} [? if psii_in_government = 0: <span style="color: #CC0000;">Opp.</span>?][? if psii_in_government = 1: <span style="color: #009900;">Gov.</span>?] {!</td></tr>!}
 
