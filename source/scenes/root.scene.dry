@@ -273,7 +273,8 @@ Q.katolik_r = 3.9;
 Q.pir_r = 7.3;
 Q.prn_r = 4.3;
 Q.murba_r = 1.7;
-Q.other_r = 29.4;
+Q.other_r = 23.8;
+Q.demokrat_r = 5.6;
 
 Q.dprs_size = 2.32;
 Q.dprs_speaker = 'Sartono';
@@ -291,6 +292,7 @@ Q.old_pir_r = 0;
 Q.old_prn_r = 0;
 Q.old_murba_r = 0;
 Q.old_other_r = 9;
+Q.old_demokrat_r = 0;
 
 // nu isn't formed yet, but it may be formed
 Q.nu_r = 0;
@@ -323,6 +325,7 @@ Q.pki_in_government = 0;
 Q.pir_in_government = 1;
 Q.prn_in_government = 0;
 Q.murba_in_government = 0;
+Q.demokrat_in_government = 1;
 
 Q.pni_in_government_1 = 0;
 Q.masyumi_in_government_1 = 0;
@@ -333,6 +336,7 @@ Q.katolik_in_government_1 = 0;
 Q.pki_in_government_1 = 0;
 Q.pir_in_government_1 = 0;
 Q.prn_in_government_1 = 0;
+Q.murba_in_government_1 = 0;
 Q.murba_in_government_1 = 0;
 
 Q.in_right_coalition = 0;
@@ -644,6 +648,12 @@ const data = [
         "legend": "Other",
         "name": "Other",
         "seats": Math.round(Q.other_r * Q.dprs_size),
+    },
+    {
+        "id": "demokrat",
+        "legend": "Demokrat",
+        "name": "Demokrat",
+        "seats": Math.round(Q.demokrat_r * Q.dprs_size),
     },
     {
         "id": "parkindo",

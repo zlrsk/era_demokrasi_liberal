@@ -616,6 +616,9 @@ table {
 .seat.other {
     fill: #909090;
 }
+.seat.demokrat {
+    fill: #003090;
+}
 .seat.parkindo {
     fill: #66B2FF;
 }
