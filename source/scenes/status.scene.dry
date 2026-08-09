@@ -14,6 +14,9 @@ if (Q.economic_growth) {
 }
 !}
 
+<img src="img/icons/PNI.png" style="width: 20%;margin: auto;">
+<div style="text-align: center;">**Partai Nasional Indonesia**</div>
+<div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Indonesian National Party*</div>
 
 = <span style="color: #990000;">**PNI**</span> Leadership
 
