@@ -14,7 +14,7 @@ if (Q.economic_growth) {
 }
 !}
 
-<div style="margin: auto;"><img src="img/icons/PNI.png" style="width: 30%;display: block;margin-top: 10px;"></div>
+<div><img src="img/icons/PNI.png" style="width: 30%;display: block;margin: auto;border: 5px solid var(--content-bg-color);"></div>
 <div style="text-align: center;">**Partai Nasional Indonesia**</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Indonesian National Party*</div>
 
