@@ -292,7 +292,7 @@ if (d3 && window && Q.started) {
 <div style="text-align: center;">**[+ dprs_speaker +]** ([? if dprs_speaker_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if dprs_speaker_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Speaker*</div>
 
-<div style="margin: auto;">{!<svg id="reichstag_st" style="width: 550px; height: 275px;"> </svg>!}</div>
+<div>{!<svg id="reichstag_st" style="width: 550px;height: 275px;margin: auto;"> </svg>!}</div>
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Seats</td><td>Status</td></tr>!}

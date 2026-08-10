@@ -686,10 +686,6 @@ Q.parliament_diagram = data
 set-bg: img/map_2.png
 new-page: true
 
-> *"The necessity of deliberately allowing and encouraging the instability of society [...] We welcome this social instability because it provides the opportunity to progress. Progress positively demands an element of instability and even of risk."*
-
- - Roeslan Abdulgani, *Indonesia's National Council: First Year*, 1958
-
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
 For more information on the politics and government of the Republic of Indonesia during the Liberal Democratic Era, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
@@ -730,6 +726,19 @@ go-to: 1951_main
 @1951_main
 audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalimasyumied.mp3 music/1928_1933/masyumiurSonne_masyumiurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalimasyumied.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SomasyumiialistenMarsch.mp3
 new-page: true
+go-to: premain
+
+@premain
+
+> *"The necessity of deliberately allowing and encouraging the instability of society [...] We welcome this social instability because it provides the opportunity to progress. Progress positively demands an element of instability and even of risk."*
+
+ - Roeslan Abdulgani, *Indonesia's National Council: First Year*, 1958
+
+It is a hopeful time for the <span style="color: #990000;">Indo</span><span style="color: #dddddd;">nesian</span> nation. After a period of struggle, the United States of Indonesia has been dissolved and we have finally secured our sovereignty. Currently, our situation is dire. Hyperinflation and economic deficit is plaguing our economy and our nascent democracy is highly unstable. <br><br> Now, our task is to form a Constitutional Assembly to draft a new constitution for the young <span style="color: #990000;">Indo</span><span style="color: #dddddd;">nesian</span> nation. The incumbent <span style="color: #000000;">Natsir</span> Cabinet is unpopular, and we stand to gain. Perhaps the next cabinet can brought over stability for our nation.
+
+-@begin: Begin
+
+@begin
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1951
