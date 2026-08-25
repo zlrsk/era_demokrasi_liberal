@@ -739,6 +739,7 @@ It is a hopeful time for the <span style="color: #990000;">Indo</span><span styl
 -@begin: Begin
 
 @begin
+new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1951
