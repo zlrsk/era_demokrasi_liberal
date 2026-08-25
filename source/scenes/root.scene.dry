@@ -124,6 +124,8 @@ Q.soekarno_enabled = 0;
 
 // The state of the country
 
+Q.election_held = 0;
+
 // popular opinion
 // national ideology - on a binary scale
 // nationalism vs internationalism or pacifism or non-nationalism
