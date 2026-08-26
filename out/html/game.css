@@ -639,40 +639,37 @@ table {
   position: relative; 
 }
 
-/* New tooltip box (reads from data-tooltip, which we'll auto-fill from title) */
-.tooltip-text[data-tooltip]::after {
-  content: attr(data-tooltip);
-  white-space: pre-line; /* \n becomes line breaks */
-  display: none;
-
-  position: absolute;
-  left: 0;
-  top: 1.8em;
-  z-index: 9999;
-
-  /* similar styling to your existing UI */
-  background-color: var(--content-bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-
-  font-size: 0.82em;
-  line-height: 1.25;
-
-  padding: 0.35em 0.5em;
-  border-radius: 4px;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-
-  width: max-content;
-  max-width: 300px;
-  pointer-events: none;
-}
-
-.tooltip-text[data-tooltip]:hover::after,
-.tooltip-text[data-tooltip]:focus::after {
-  display: block;
-}
-
-/* Optional: make highlight slightly different on hover */
-.tooltip-text:hover {
+.tooltip-wrap {
+  position: relative;
   text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: help;
+}
+.tooltip-tip {
+  visibility: hidden;
+  position: absolute;
+  z-index: 5;
+  width: 200px;
+  max-width: 220px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  margin-top: 0.4em;
+  padding: 0.4em;
+  font-size: 0.85em;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  background-color: var(--content-bg-color);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.tooltip-wrap:hover .tooltip-tip,
+.tooltip-wrap:focus .tooltip-tip {
+  visibility: visible;
+}
+.tooltip-tip img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 4px auto;
+  border: 1px solid #999;
 }

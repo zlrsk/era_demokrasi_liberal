@@ -48,7 +48,7 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 {!<span class="tooltip-text" title="Wilopo's faction mostly consists of moderate, younger figures of the party.">Wilopo Group</span>!} (<span style="color: #ff6d50;">**Moderates**</span>) <br>Strength: [+ wilopo_strength : strength +] <br>Dissent: [+ wilopo_dissent : dissent +]
 
-{!<span class="tooltip-text" title='<img src="img/portraits/sidik.jpg" style="width: 35%;border: 2px solid var(--card-border-color);margin: 0px 10px 10px 0px;float: left;"> Sidik Djojosukarto and his clique pushes the party to a pro-labor and socialist stance.'>Sidik Group</span>!} (<span style="color: #e90000;">**Leftists**</span>) <br>Strength: [+ sidik_strength : strength +] <br>Dissent: [+ sidik_dissent : dissent +]
+<span class="tooltip-wrap">Sidik Group<span class="tooltip-tip"><img src="img/portraits/sidik.jpg">Sidik Djojosukarto and his clique pushes the party to a pro-labor and socialist stance.</span></span> (<span style="color: #e90000;">**Leftists**</span>) <br>Strength: [+ sidik_strength : strength +] <br>Dissent: [+ sidik_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The Sartono-Suwirjo group are mostly administrators and bureaucrats who are more radical in their nationalism.">Sartono-Suwirjo Group</span>!} (<span style="color: #7c0000;">**Radicals**</span>) <br>Strength: [+ partindo_strength : strength +] <br>Dissent: [+ partindo_dissent : dissent +]
 
