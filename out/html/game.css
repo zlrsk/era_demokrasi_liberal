@@ -667,6 +667,9 @@ table {
 .tooltip-wrap:focus .tooltip-tip {
   visibility: visible;
 }
+.tooltip-wrap:hover {
+  text-decoration: underline;
+}
 .tooltip-tip img {
   width: 100%;
   display: block;
