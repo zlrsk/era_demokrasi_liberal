@@ -292,7 +292,7 @@ if (d3 && window && Q.started) {
 <div style="text-align: center;">**[+ dprs_speaker +]** ([? if dprs_speaker_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if dprs_speaker_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Speaker*</div>
 
-<div>{!<svg id="reichstag_st" style="display: block;width: 150%;"> </svg>!}</div>
+<div style="width: auto;">{!<svg id="reichstag_st" style="display: block;"> </svg>!}</div>
 <div style="text-align: center;margin-top: 5px;">**Dewan Perwakilan Rakyat [? if election_held == 0: Sementara?]**</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*[? if election_held == 0: Provisional?] House of Representatives*</div>
 
