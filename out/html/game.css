@@ -656,7 +656,7 @@ table {
   transform: translateX(-50%);
   margin-top: 0.4em;
   padding: 0.4em;
-  font-size: 0.85em;
+  font-size: 0.65em;
   text-align: center;
   text-decoration: none;
   border: 1px solid var(--border-color);
