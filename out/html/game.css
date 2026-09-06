@@ -653,10 +653,10 @@ table {
   max-width: 300px;
   left: 50%;
   top: 100%;
-  transform: translateX(-50%);
+  line-height: 1.1;
   margin-top: 0.4em;
-  padding: 0.4em;
-  font-size: 0.65em;
+  padding: 0.5em;
+  font-size: 0.7em;
   text-align: center;
   text-decoration: none;
   border: 1px solid var(--border-color);
