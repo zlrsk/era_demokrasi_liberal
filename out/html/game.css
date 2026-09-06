@@ -653,9 +653,11 @@ table {
   max-width: 300px;
   left: 50%;
   top: 100%;
-  line-height: 1.1;
+  line-height: 1.2;
+  text-indent: -10px;
+  transform: translateX(50%);
   margin-top: 0.4em;
-  padding: 0.5em;
+  padding: 0.6em;
   font-size: 0.7em;
   text-align: center;
   text-decoration: none;
