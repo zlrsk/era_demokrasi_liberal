@@ -652,8 +652,9 @@ table {
   width: 200px;
   max-width: 300px;
   top: 100%;
+  left: 50%;
   line-height: 1.2;
-  text-indent: -5px;
+  text-indent: 0px;
   margin-top: 0.4em;
   padding: 0.6em;
   font-size: 0.7em;

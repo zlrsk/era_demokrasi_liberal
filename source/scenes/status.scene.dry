@@ -46,7 +46,7 @@ Grassroots Dues: [+ dues +]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
-{!<span class="tooltip-text" title="Wilopo's faction mostly consists of moderate, younger figures of the party.">Wilopo Group</span>!} (<span style="color: #ff6d50;">**Moderates**</span>) <br>Strength: [+ wilopo_strength : strength +] <br>Dissent: [+ wilopo_dissent : dissent +]
+<span class="tooltip-wrap">Wilopo Group<span class="tooltip-tip"><img src="img/portraits/wilopo.jpg" style="width: 50%;">Wilopo's faction mostly consists of moderate, younger figures of the party.></span></span> (<span style="color: #ff6d50;">**Moderates**</span>) <br>Strength: [+ wilopo_strength : strength +] <br>Dissent: [+ wilopo_dissent : dissent +]
 
 <span class="tooltip-wrap">Sidik Group<span class="tooltip-tip"><img src="img/portraits/sidik.jpg" style="width: 50%;">Sidik Djojosukarto and his clique pushes the party to a pro-labor and socialist stance.</span></span> (<span style="color: #e90000;">**Leftists**</span>) <br>Strength: [+ sidik_strength : strength +] <br>Dissent: [+ sidik_dissent : dissent +]
 
