@@ -650,7 +650,7 @@ table {
   position: absolute;
   z-index: 5;
   width: 200px;
-  max-width: 300px;
+  max-width: 350px;
   top: 100%;
   left: 50%;
   line-height: 1.2;
@@ -658,7 +658,7 @@ table {
   margin-top: 0.4em;
   padding: 0.6em;
   font-size: 0.75em;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   border: 1px solid var(--border-color);
   background-color: var(--content-bg-color);
