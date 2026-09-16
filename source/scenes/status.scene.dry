@@ -21,7 +21,6 @@ if (Q.economic_growth) {
 
 <hr>
 = <span style="color: #990000;">**PNI**</span> Leadership
-<hr>
 
 [? if pni_leader == "Sidik Djojosukarto": <div><img src="img/portraits/sidik.jpg" alt="Sidik Djojosukarto" style="width: 50%;display: block;margin-top: 5px;margin: auto;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ pni_leader +]**</div>
@@ -35,7 +34,6 @@ Next Congress: [+ next_congress_month +] [+ next_congress_year +]
 
 <hr>
 = Finance
-<hr>
 
 Resources available: [+ resources +]
 
@@ -49,19 +47,17 @@ Grassroots Dues: [+ dues +]
 
 <hr>
 = Internal Factions
-<hr>
 
 Internal dissent: [+ dissent_percent : dissent +]
 
-<span class="tooltip-wrap">Wilopo Group<span class="tooltip-tip"><img src="img/portraits/wilopo.jpg" style="width: 30%;float: left; margin-right: 5px;">Wilopo's faction mostly consists of moderate, younger figures of the party.</span></span> (<span style="color: #ff6d50;">**Moderates**</span>) <br>Strength: [+ wilopo_strength : strength +] <br>Dissent: [+ wilopo_dissent : dissent +]
+<span class="tooltip-wrap">Wilopo Group<span class="tooltip-tip"><img src="img/portraits/wilopo.jpg" style="width: 35%;float: left; margin-right: 5px;">Wilopo's faction mostly consists of moderate, younger figures of the party.</span></span> (<span style="color: #ff6d50;">**Moderates**</span>) <br>Strength: [+ wilopo_strength : strength +] <br>Dissent: [+ wilopo_dissent : dissent +]
 
-<span class="tooltip-wrap">Sidik Group<span class="tooltip-tip"><img src="img/portraits/sidik.jpg" style="width: 30%;float: left; margin-right: 5px;">Sidik Djojosukarto and his clique pushes the party to a pro-labor and socialist stance.</span></span> (<span style="color: #e90000;">**Leftists**</span>) <br>Strength: [+ sidik_strength : strength +] <br>Dissent: [+ sidik_dissent : dissent +]
+<span class="tooltip-wrap">Sidik Group<span class="tooltip-tip"><img src="img/portraits/sidik.jpg" style="width: 35%;float: left; margin-right: 5px;">Sidik Djojosukarto and his clique pushes the party to a pro-labor and socialist stance.</span></span> (<span style="color: #e90000;">**Leftists**</span>) <br>Strength: [+ sidik_strength : strength +] <br>Dissent: [+ sidik_dissent : dissent +]
 
-<span class="tooltip-wrap">Sartono-Suwirjo Group<span class="tooltip-tip"><img src="img/portraits/sartono.jpg" style="width: 30%;float: left; margin-right: 5px;">The Sartono-Suwirjo group are mostly administrators and bureaucrats who are more radical in their nationalism.</span></span> (<span style="color: #7c0000;">**Radicals**</span>) <br>Strength: [+ partindo_strength : strength +] <br>Dissent: [+ partindo_dissent : dissent +]
+<span class="tooltip-wrap">Sartono-Suwirjo Group<span class="tooltip-tip"><img src="img/portraits/sartono.jpg" style="width: 35%;float: left; margin-right: 5px;">The Sartono-Suwirjo group are mostly administrators and bureaucrats who are more radical in their nationalism.</span></span> (<span style="color: #7c0000;">**Radicals**</span>) <br>Strength: [+ partindo_strength : strength +] <br>Dissent: [+ partindo_dissent : dissent +]
 
 <hr>
 = Economics
-<hr>
 
 Inflation: [+ inflation_2 +]%
 
@@ -73,7 +69,6 @@ Economic growth: [+ economic_growth_2 +]%
 
 <hr>
 = Inter-party Politics
-<hr>
 
 <img src="img/icons/PNI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian National Party" style="color: #990000;"><strong>PNI</strong></span>!} <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
 
@@ -94,6 +89,7 @@ Economic growth: [+ economic_growth_2 +]%
 <img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!} <br>Leader: Djody Gondokusumo <br>Ideology: Right-wing Nationalism <br>Relations: [+ prn_relation : relationships +]
 
 <img src="img/icons/murba.png" style="height: 10px;"> {!<span class="tooltip-text" title="Proletarian Party" style="color: #ff3333;"><strong>Murba</strong></span>!} <br>Leader: Sukarni <br>Ideology: Tan Malaka Thought <br>Relations: [+ murba_relation : relationships +]
+<hr>
 
 @polls
 on-arrival: {!
@@ -219,7 +215,6 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 <hr>
 = Government 
-<hr>
 
 <div style="display: flex;gap: 5px;margin-top: 5px;margin-bottom: 5px;margin-left: -3px;justify-content: center;">
 <img src="img/portraits/soekarno.jpg" alt="Soekarno" style="width: 45%;border: 5px solid var(--card-border-color);"> 
@@ -236,7 +231,6 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 <hr>
 = Cabinet
-<hr>
 
 [? if chancellor == "Mohammad Natsir": <div><img src="img/portraits/natsir.jpg" alt="Natsir" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?][? if chancellor == "Susanto": <div><img src="img/portraits/susanto.jpg" alt="Susanto" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ chancellor +]** ([? if chancellor_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if chancellor_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
@@ -303,13 +297,11 @@ if (d3 && window && Q.started) {
 
 <hr>
 = Parliament
-<hr>
 
 [? if dprs_speaker == "Sartono": <div><img src="img/portraits/sartono.jpg" alt="Sartono" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ dprs_speaker +]** ([? if dprs_speaker_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if dprs_speaker_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Speaker*</div>
 
-<hr>
 <div style="width: auto;">{!<svg id="reichstag_st" style="display: block;"> </svg>!}</div>
 <div style="text-align: center;margin-top: 5px;">**Dewan Perwakilan Rakyat [? if election_held == 0: Sementara?]**</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*[? if election_held == 0: Provisional?] House of Representatives*</div>
