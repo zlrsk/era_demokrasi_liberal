@@ -169,11 +169,10 @@ Who shall hold this ministry?
 - @ministries_pick: Go back.
 
 @justice_pni
-on-arrival: leverage -= 10
 choose-if: leverage >= 10
 unavailable-subtitle: We do not have enough leverage.
 go-to: ministries_pick
-on-arrival: justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo" if year <1955; justice_minister = "Gustaaf Adolf Maengkom" if year >= 1955;
+on-arrival: leverage -= 10; justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo" if year <1955; justice_minister = "Gustaaf Adolf Maengkom" if year >= 1955;
 
 [? if year <1955: Susanto Tirtoprodjo?][? if year >= 1955: Gustaaf Adolf Maengkom?] will be appointed Justice Minister.
 
