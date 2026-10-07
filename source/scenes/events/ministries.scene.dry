@@ -166,6 +166,7 @@ Who shall hold this ministry?
 - @justice_psi: The PSI.
 - @justice_m: The Masjumi.
 - @justice_pir: The PIR.
+- @ministries_pick: Go back
 
 @justice_pni
 on-arrival: leverage -= 10
@@ -215,6 +216,7 @@ go-to: foreign_1
 Who shall take this ministry?
 
 - @foreign_pni: We will take this ministry.
+- @ministries_pick: Go back.
 
 
 @foreign_pni
