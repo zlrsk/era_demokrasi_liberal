@@ -159,7 +159,25 @@
   };
 
   
-  window.getDynamicTooltipContent = getDynamicTooltipContent;
+  // This function allows you to modify the text before it's displayed.
+  // E.g. wrapping chat-like messages in spans.
+  window.displayText = function(text) {
+      return text;
+  };
+
+      function getDynamicTooltipContent(searchString, baseTooltip) {
+        var Q = window.dendryUI && window.dendryUI.dendryEngine && window.dendryUI.dendryEngine.state ? 
+                window.dendryUI.dendryEngine.state.qualities : null;
+        
+        if (!Q) return baseTooltip.explanationText;
+        
+        if (searchString === 'PKI' && Q.pki_relation !== undefined) {
+            var relationText = getRelationshipText(Q.pki_relation);
+            return baseTooltip.explanationText + '<br>Relation: ' + relationText;
+        }
+
+        return baseTooltip.explanationText;
+    }
 
     function applyWholesome(str) {
         const allWords = new Set([

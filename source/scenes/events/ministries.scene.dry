@@ -154,19 +154,24 @@ Rooseno Surjohadikusumo will be appointed Minister of Trade and Industry.
 @justice
 title: Justice Ministry
 subtitle: The Justice Ministry controls the judiciary and the courts.
-unavailable-subtitle: We do not have enough leverage.
 tags: mins_1951
 view-if: justice_minister_party_candidate = 0
 go-to: justice_1
 
 @justice_1
+
+Who shall hold this ministry?
+
+- @justice_pni: We will take this ministry.
+- @justice_psi: The PSI.
+- @justice_m: The Masjumi.
+- @justice_pir: The PIR.
+
+@justice_pni
 on-arrival: leverage -= 10
 choose-if: leverage >= 10
-
-Who shall be our pick for this ministry?
-
-- @susanto: Susanto Tirtoprodjo
-- @gustaf: Gustaaf Adolf Maengkom
+unavailable-subtitle: We do not have enough leverage.
+go-to: susanto if year <1955; gustaf if year >=1955;
 
 @susanto
 on-arrival: justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo"
@@ -180,16 +185,42 @@ go-to: ministries_pick
 
 Gustaaf Adolf Maengkom will be appointed Justice Minister.
 
+@justice_psi
+on-arrival: economic_minister_party_candidate = "PSI"; economic_minister_candidate = "Lukman Wiriadinata"
+go-to: ministries_pick
+
+Lukman Wiriadinata will be appointed Minister of Justice.
+
+@justice_m
+on-arrival: economic_minister_party_candidate = "M"; economic_minister_candidate = "Muljatno"
+go-to: ministries_pick
+
+Muljatno will be appointed Minister of Justice.
+
+@justice_pir
+on-arrival: economic_minister_party_candidate = "PIR"; economic_minister_candidate = "Wongsonegoro"
+go-to: ministries_pick
+
+Wongsonegoro will be appointed Minister of Justice.
+
 @foreign
 title: Foreign Ministry
 subtitle: The Foreign Ministry controls foreign affairs and international relations.
-unavailable-subtitle: We do not have enough leverage.
 tags: mins_1951
-choose-if: leverage >= 10 
-view-if: foreign_minister_party != "PNI"
+view-if: foreign_minister_party_candidate = 0
 go-to: foreign_1
 
 @foreign_1
+
+Who shall take this ministry?
+
+- @foreign_pni: We will take this ministry.
+
+
+@foreign_pni
+choose-if: leverage >= 10 
+on-arrival: leverage -= 10
+unavailable-subtitle: We do not have enough leverage.
 
 Who shall be our pick for this ministry?
 
