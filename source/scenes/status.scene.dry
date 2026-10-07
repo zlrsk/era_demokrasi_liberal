@@ -14,13 +14,11 @@ if (Q.economic_growth) {
 }
 !}
 
-<hr>
 <div><img src="img/icons/PNI.png" style="width: 30%;display: block;margin: auto;border: 5px solid var(--content-bg-color);"></div>
 <div style="text-align: center;">**Partai Nasional Indonesia**</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Indonesian National Party*</div>
 
 <hr>
-= <span style="color: #990000;">**PNI**</span> Leadership
 
 [? if pni_leader == "Sidik Djojosukarto": <div><img src="img/portraits/sidik.jpg" alt="Sidik Djojosukarto" style="width: 50%;display: block;margin-top: 5px;margin: auto;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ pni_leader +]**</div>
@@ -32,8 +30,8 @@ General Secretary: <br>[+ gensec +]</div>
 
 Next Congress: [+ next_congress_month +] [+ next_congress_year +]
 
-<hr>
 = Finance
+<hr>
 
 Resources available: [+ resources +]
 
@@ -45,8 +43,8 @@ Grassroots Dues: [+ dues +]
 
 [? if PNI_in_government and (in_left_front or in_popular_front): PKI coalition dissent: [+ PKI_coalition_dissent : coalition_dissent +] ?]
 
-<hr>
 = Internal Factions
+<hr>
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -56,8 +54,8 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 <span class="tooltip-wrap">Sartono-Suwirjo Group<span class="tooltip-tip"><img src="img/portraits/sartono.jpg" style="width: 35%;float: left; margin-right: 5px;">The Sartono-Suwirjo group are mostly administrators and bureaucrats who are more radical in their nationalism.</span></span> (<span style="color: #7c0000;">**Radicals**</span>) <br>Strength: [+ partindo_strength : strength +] <br>Dissent: [+ partindo_dissent : dissent +]
 
-<hr>
 = Economics
+<hr>
 
 Inflation: [+ inflation_2 +]%
 
@@ -67,8 +65,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 @politics
 
-<hr>
 = Inter-party Politics
+<hr>
 
 <img src="img/icons/PNI.png" style="height: 10px;"> {!<span class="tooltip-text" title="Indonesian National Party" style="color: #990000;"><strong>PNI</strong></span>!} <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
 
@@ -89,7 +87,6 @@ Economic growth: [+ economic_growth_2 +]%
 <img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!} <br>Leader: Djody Gondokusumo <br>Ideology: Right-wing Nationalism <br>Relations: [+ prn_relation : relationships +]
 
 <img src="img/icons/murba.png" style="height: 10px;"> {!<span class="tooltip-text" title="Proletarian Party" style="color: #ff3333;"><strong>Murba</strong></span>!} <br>Leader: Sukarni <br>Ideology: Tan Malaka Thought <br>Relations: [+ murba_relation : relationships +]
-<hr>
 
 @polls
 on-arrival: {!
@@ -213,8 +210,8 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 @paramilitaries
 
-<hr>
 = Government 
+<hr>
 
 <div style="display: flex;gap: 5px;margin-top: 5px;margin-bottom: 5px;margin-left: -3px;justify-content: center;">
 <img src="img/portraits/soekarno.jpg" alt="Soekarno" style="width: 45%;border: 5px solid var(--card-border-color);"> 
@@ -229,8 +226,8 @@ Support for the Republic: [+ pro_republic_disp +]%
 <div style="text-align: center;width: 50%;color: var(--unavailable-color);font-size: 0.8em;">*Vice President*</div>
 </div>
 
-<hr>
 = Cabinet
+<hr>
 
 [? if chancellor == "Mohammad Natsir": <div><img src="img/portraits/natsir.jpg" alt="Natsir" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?][? if chancellor == "Susanto": <div><img src="img/portraits/susanto.jpg" alt="Susanto" style="width: 50%;display: block;margin: auto;margin-top: 5px;margin-bottom: 5px;border: 5px solid var(--card-border-color);"></div> ?]
 <div style="text-align: center;">**[+ chancellor +]** ([? if chancellor_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if chancellor_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
