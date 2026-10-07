@@ -166,25 +166,16 @@ Who shall hold this ministry?
 - @justice_psi: The PSI.
 - @justice_m: The Masjumi.
 - @justice_pir: The PIR.
-- @ministries_pick: Go back
+- @ministries_pick: Go back.
 
 @justice_pni
 on-arrival: leverage -= 10
 choose-if: leverage >= 10
 unavailable-subtitle: We do not have enough leverage.
-go-to: susanto if year <1955; gustaf if year >=1955;
-
-@susanto
-on-arrival: justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo"
 go-to: ministries_pick
+on-arrival: justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo" if year <1955; justice_minister = "Gustaaf Adolf Maengkom" if year >= 1955;
 
-Susanto Tirtoprodjo will be appointed Justice Minister.
-
-@gustaf
-on-arrival: justice_minister_party = "PNI"; justice_minister = "Gustaaf Adolf Maengkom"
-go-to: ministries_pick
-
-Gustaaf Adolf Maengkom will be appointed Justice Minister.
+[? if year <1955: Susanto Tirtoprodjo?][? if year >= 1955: Gustaaf Adolf Maengkom?] will be appointed Justice Minister.
 
 @justice_psi
 on-arrival: economic_minister_party_candidate = "PSI"; economic_minister_candidate = "Lukman Wiriadinata"
