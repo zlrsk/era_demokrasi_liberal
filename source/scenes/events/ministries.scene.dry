@@ -156,12 +156,12 @@ title: Justice Ministry
 subtitle: The Justice Ministry controls the judiciary and the courts.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1951
-choose-if: leverage >= 10 
-view-if: justice_minister_party != "PNI"
-on-arrival: leverage -= 10
+view-if: justice_minister_party_candidate = 0
 go-to: justice_1
 
 @justice_1
+on-arrival: leverage -= 10
+choose-if: leverage >= 10
 
 Who shall be our pick for this ministry?
 

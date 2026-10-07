@@ -677,3 +677,23 @@ table {
   margin: 0 auto 4px auto;
   border: 1px solid #999;
 }
+
+:root {
+  --pki-colour: #c00000;
+  --pni-colour: #990000;
+  --murba-colour: #ff3333;
+  --psi-colour: #ff6666;
+  --pir-colour: #ff9933;
+  --prn-colour: #545454;
+  --parkindo-colour: #66b2ff;
+  --katolik-colour: #330000;
+  --masyumi-colour: #000000;
+  --psii-colour: #003319;
+  --demokrat-colour: #003399;
+  --dnf-colour: #003755;
+  --dap-colour: #524732;
+  --nsdap-colour: #7A3C00;
+  --i-colour: #808080;
+  --dhp-colour: #63C489;
+  --wp-colour: #CCAA7A;
+}
