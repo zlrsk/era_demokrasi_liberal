@@ -21,8 +21,8 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1951;
-Q.month = 0;
+Q.year = 1950;
+Q.month = 8;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 Q.leverage = 0;
@@ -312,6 +312,7 @@ Q.economic_records = [];
 
 
 // State of the government
+Q.first_cabinet_formed = 0
 Q.president = "Sukarno";
 Q.vice_pres = "Muhammad Hatta";
 Q.chancellor = "Mohammad Natsir";
@@ -395,6 +396,8 @@ Q.education_minister = 'Bahder Djohan';
 Q.education_minister_party = 'I';
 Q.enlightenment_minister = 'M. A. Pellaupessy';
 Q.enlightenment_minister_party = 'Demokrat';
+Q.labor_minister = 'Pandji Suroso';
+Q.labor_minister_party = 'Parindra';
 
 Q.deputy_pm_candidate = 0;
 Q.deputy_pm_party_candidate = 0;
@@ -420,6 +423,8 @@ Q.education_minister_candidate = 0;
 Q.education_minister_party_candidate = 0;
 Q.enlightenment_minister_candidate = 0;
 Q.enlightenment_minister_party_candidate = 0;
+Q.labor_minister_candidate = '0';
+Q.labor_minister_party_candidate = '0';
 
 // Events: what has occurred?
 Q.unemployment_insurance_seen = 0;

@@ -22,7 +22,7 @@ face-image: img/portraits/natsir.jpg
 
 With Natsir's appointment, the politics of cabinet formation have gone into high gear. The main problems Natsir encountered are the relations between the <span style="color: #000000;">**Masjumi**</span> and the <span style="color: #900000;">**PNI**</span>, the second party with the largest parliamentary representation. Natsir believed that, as the party of the *formatuer* and intended prime minister, the <span style="color: #000000;">**Masjumi**</span> should have the largest leverage in forming the new cabinet. Moreover, the <span style="color: #000000;">**Masjumi**</span> and its various factions and member organisations are pressing him to make high demands. 
 
-Natsir insists that the <span style="color: #000000;">**Masjumi**</span> should hold six positions in the cabinet: the prime ministership, three of the major portfolios, the Interior, Finance, and Defense, and the lesser Education and Religious Affairs portfolios. In turn, the <span style="color: #900000;">**PNI**</span> would gain the portfolios of Foreign Affairs, Information, Public Works, and Labor.
+Natsir insists that the <span style="color: #000000;">**Masjumi**</span> should hold six positions in the cabinet: the prime ministership, three of the major portfolios, the Interior, Finance, and Defense, and the lesser Education and Religious Affairs portfolios. In turn, the <span style="color: #900000;">**PNI**</span> would gain the portfolios of Foreign Affairs, Information, Public Works, and Labor. Most of the party, however, believes that this arrangement is unfair and that the <span style="color: #900000;">**PNI**</span>, as the second largest party, should have greater influence within the cabinet. 
 
 - @natsir_ye: Accept and join the cabinet.
 - @natsir_no: These demands are outrageous!
@@ -32,5 +32,13 @@ Natsir insists that the <span style="color: #000000;">**Masjumi**</span> should 
 We have rejected Natsir's unfair offer, thus the <span style="color: #900000;">**PNI**</span> would not participate in his cabinet. It is likely that Natsir would return his mandate back to the President.
 
 @natsir_ye
+subtitle: Most of the party would be incensed.
+on-arrival: sidik_dissent += 20; partindo_dissent += 20; sidik_strength -= 5; 
+on-departure: first_cabinet_formed = 1; foreign_minister = 'Moekarto Notowidigdo'; foreign_minister_party = 'PNI'; enlightenment_minister_minister = 'Arnold Mononutu'; enlightenment_minister_party = 'PNI'; publicworks_minister = 'Umar Bratakusumah'; publicworks_minister_party = 'PNI'; labor_minister = 'Wilopo'; labor_minister_party = 'PNI';
 
-grvsdc
+At last the first cabinet of the reborn republic is formulated, though at the cost of indignations and uproar within the <span style="color: #900000;">**PNI**</span>. Natsir reported back to the president that he had successfully formed a new cabinet.
+
+As per the agreement, we are granted the portfolios of Foreign Affairs, Information, Public Works, and Labor. 
+
+- @root: The cabinet is formed.
+
