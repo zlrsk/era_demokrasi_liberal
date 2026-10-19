@@ -3,7 +3,7 @@ subtitle: The *formateur* is to form a cabinet.
 new-page: true
 tags: event
 max-visits: 1
-view-if: year = 1951 and month >= 9
+view-if: year = 1950 and month >= 9
 
 = Negotiations for a New Cabinet
 
@@ -34,7 +34,7 @@ We have rejected Natsir's unfair offer, thus the <span style="color: #900000;">*
 @natsir_ye
 subtitle: Most of the party would be incensed.
 on-arrival: sidik_dissent += 20; partindo_dissent += 20; sidik_strength -= 5; 
-on-departure: first_cabinet_formed = 1; foreign_minister = 'Moekarto Notowidigdo'; foreign_minister_party = 'PNI'; enlightenment_minister_minister = 'Arnold Mononutu'; enlightenment_minister_party = 'PNI'; publicworks_minister = 'Umar Bratakusumah'; publicworks_minister_party = 'PNI'; labor_minister = 'Wilopo'; labor_minister_party = 'PNI';
+on-departure: first_cabinet_formed = 1; foreign_minister = 'Moekarto Notowidigdo'; foreign_minister_party = 'PNI'; enlightenment_minister = 'Arnold Mononutu'; enlightenment_minister_party = 'PNI'; publicworks_minister = 'Umar Bratakusumah'; publicworks_minister_party = 'PNI'; labor_minister = 'Wilopo'; labor_minister_party = 'PNI';
 
 At last the first cabinet of the reborn republic is formulated, though at the cost of indignations and uproar within the <span style="color: #900000;">**PNI**</span>. Natsir reported back to the president that he had successfully formed a new cabinet.
 
