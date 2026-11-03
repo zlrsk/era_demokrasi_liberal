@@ -1,7 +1,7 @@
 title: The Natsir Cabinet Falls!
 subtitle: Prime minister Natsir returns his mandate back to the President.
 new-page: true
-view-if: year = 1951 and month >= 4
+view-if: year = 1951 and month >= 3
 frequency: 1000
 tags: event
 max-visits: 1
