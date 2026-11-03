@@ -23,4 +23,4 @@ The President has appointed Sartono, a prominent <span style="color: #990000;">*
 - @begin: Begin negotiations..
 
 @begin
-go-to: negotiation_natsir
+go-to: formateur_sartono
