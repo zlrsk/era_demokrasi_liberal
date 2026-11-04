@@ -111,8 +111,8 @@ Q.pki_leader = "Alimin";
 Q.pki_ideology = "Marxism-Leninism";
 Q.masyumi_leader = "Mohammad Natsir";
 // higher means more left
-Q.masyumi_ideology = 30;
-Q.masyumi_ideology1 = "Political Islam";
+Q.masyumi_faction = 65;
+Q.masyumi_ideology = "Political Islam";
 Q.pni_leader = "Sidik Djojosukarto";
 Q.prn_name = "PNI-M";
 

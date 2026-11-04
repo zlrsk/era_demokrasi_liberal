@@ -1,0 +1,166 @@
+title: Natsir Calls a Vote of Confidence!
+subtitle: The cabinet attempts to consolidate its position..
+new-page: true
+tags: event
+max-visits: 1
+view-if: year = 1950 and month = 11
+
+on-display: {!
+const data = [
+    {
+        "id": "pki",
+        "legend": "PKI",
+        "name": "PKI",
+        "seats": 13,
+        "color": "#c51313",
+    },
+    {
+        "id": "murba",
+        "legend": "Murba",
+        "name": "Murba",
+        "seats": 4,
+        "color": "#c51313",
+    },
+    {
+        "id": "psi",
+        "legend": "PSI",
+        "name": "PSI",
+        "seats": 17,
+        "color": "#158e33",
+    },
+    {
+        "id": "pni",
+        "legend": "PNI",
+        "name": "PNI",
+        "seats": 36,
+        "color": "#c51313",
+    },
+    {
+        "id": "pir",
+        "legend": "PIR",
+        "name": "PIR",
+        "seats": 17,
+        "color": "#158e33",
+    },
+    {
+        "id": "prn",
+        "legend": "PRN",
+        "name": "PRN",
+        "seats": 10,
+        "color": "#158e33",
+    },
+    {
+        "id": "other-aye",
+        "legend": "Other (Aye)",
+        "name": "Other",
+        "seats": 22,
+        "color": "#158e33",
+    },
+    {
+        "id": "other-absent",
+        "legend": "Other (Absent)",
+        "name": "Other",
+        "seats": 18,
+        "color": "#9e9e9e",
+    },
+    {
+        "id": "other-nay",
+        "legend": "Other (Nay)",
+        "name": "Other",
+        "seats": 8,
+        "color": "#c51313",
+    },
+    {
+        "id": "demokrat",
+        "legend": "Demokrat",
+        "name": "Demokrat",
+        "seats": 13,
+        "color": "#158e33",
+    },
+    {
+        "id": "parkindo",
+        "legend": "Parkindo",
+        "name": "Parkindo",
+        "seats": 7,
+        "color": "#9e9e9e",
+    },
+    {
+        "id": "katolik",
+        "legend": "Katolik",
+        "name": "Katolik",
+        "seats": 9,
+        "color": "#158e33",
+    },
+    {
+        "id": "psii",
+        "legend": "PSII",
+        "name": "PSII",
+        "seats": 5,
+        "color": "#c51313",
+    },
+    {
+        "id": "masyumi",
+        "legend": "Masjumi",
+        "name": "Masjumi",
+        "seats": Math.round(Q.masyumi_faction * 46/100),
+        "color": "#158e33",
+    },
+    {
+        "id": "masyumi-absent",
+        "legend": "Masjumi (Absent)",
+        "name": "Masjumi",
+        "seats": Math.round((100-Q.masyumi_faction) * 46/100),
+        "color": "#9e9e9e",
+    },
+];
+
+//absent: 41
+//aye: 118
+//nay: 73
+
+Q.parliament_diagram = data
+
+if (window && d3) {
+    var width = 500; 
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50; 
+        height = width;
+        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+    } 
+
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#reichstag").datum(data).call(parliament);
+    // Calculate green and red votes
+    var greenVotes = 0, redVotes = 0;
+    data.forEach(function(d) {
+        if (d.color === "#158e33") greenVotes += d.seats;
+        if (d.color === "#c51313") redVotes += d.seats;
+    });
+}
+!}
+
+= Vote of Confidence
+
+Ever since its formation, the Natsir cabinet had been attacked on numerous grounds. In particular, <span style="color: var(--pni-colour);">**PNI**</span> and <span style="color: var(--pki-colour);">**PKI**</span> spokesmen and others hammered on the subject of the procedures whereby Natsir had formed the cabinet, although Natsir himself maintained that in this matter he was accountable not to parliament but to the President. They argued that he had in fact formed "a parliamentary business cabinet" rather than a coalition cabinet based on the parties. This, they said, weakened Indonesia's new traditions of parliamentarianism. 
+
+Parallel criticisms of Natsir were made by <span style="color: var(--masyumi-colour);">**Masjumi**</span> leaders of the Sukiman group. Dr. Sukiman, speaking in parliament, said that the cabinet's composition reflected army pressure and that it was in fact a business cabinet and as such a violation of the President's instructions. Mr. Jusuf Wibisono, a close follower of Sukiman and a personal rival of Natsir, took a similar position.
+
+In order to end the seemingly endless parliamentary bickering, the Natsir cabinet has called for a vote of confidence, aiming to solidify its position.
+
+- @voc: The voting commences..
+
+@voc
+
+{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+
+The voting concludes. The cabinet has won by a count of [+ greenVotes +] to [+ redVotes +]. Among the parties represented in the cabinet, the <span style="color: var(--parkindo-colour);">**Parkindo**</span> abstained and the <span style="color: var(--psii-colour);">**PSII**</span> surprisingly voted against the confidence motion. Although Natsir has the backing of the majority of the <span style="color: var(--masyumi-colour);">**Masjumi**</span> executive, his actions as prime minister has only aggravated the deepening division within the party. This division is made visible during the vote where <span style="color: var(--masyumi-colour);">**Masjumi**</span> leaders, such as Jusuf Wibisono, Burhanuddin Harahap, and other members of the Sukiman group, have decided to abstain on the vote. The only fraction which is not in government yet supported the motion is the <span style="color: var(--prn-colour);">**PNI-M**</span>. 
+
+Despite the considerable margin of votes obtained by the cabinet, it appears that the motion has only exacerbated tensions between the parliament and the cabinet.
+
+- @root
+
