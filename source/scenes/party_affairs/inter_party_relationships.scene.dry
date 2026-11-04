@@ -107,21 +107,21 @@ We are currently coalition partners with them, so improving relations comes natu
 
 @sukiman_connections
 subtitle: -1 resources
-view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Muhammad Natsir"
+view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Mohammad Natsir"
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; masyumi_relation += 4*(wilopo_strength / 10);
 
 @sukiman_connections1
 subtitle: -1 resources
-view-if: (wilopo_strength > sidik_strength) and (wilopo_strength > partindo_strength) and masyumi_leader == "Soekiman Wirjosandjojo"
+view-if: (wilopo_strength > sidik_strength) and (wilopo_strength > partindo_strength) and masyumi_leader == "Sukiman Wirjosandjojo"
 choose-if: resources >= 1 and partindo_dissent <= 20 and sidik_dissent <= 20
 unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if partindo_dissent >= 20 or sidik_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; partindo_strength += 2; sidik_dissent += 2
 
 @natsir_connections
 subtitle: -1 resources
-view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Muhammad Natsir"
+view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Mohammad Natsir"
 choose-if: resources >= 1 and wilopo_dissent <= 20
 unavailable-subtitle: [? if resources <= 1: Not enough resources. ?][? if wilopo_dissent >= 20: The party is unwilling. ?]
 on-arrival: resources -= 1; wilopo_strength += 3
