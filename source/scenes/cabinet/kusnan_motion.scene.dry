@@ -42,6 +42,9 @@ Eventually, the immediate crisis has passed.
 - @hadikusumo: Or has it?
 
 @hadikusumo
+new-page: true
+
+= The Issue of the Regional Councils
 
 But this does not mean that the Natsir cabinet's position is secure. 
 
@@ -55,7 +58,7 @@ Only twelve days after the Natsir cabinet narrowly survived the test of the Kusn
 
 @hadikusumo_yay
 subtitle: 70 to 48
-on-arrival: rural_masyumi -= 10
+on-arrival: middle_masyumi -= 5
 
 The <span style="color: #ff9933;">**PIR**</span>, <span style="color: #b9a568;">**Parindra**</span>, and the <span style="color: #66B2FF;">**Parkindo**</span> voted with the opposition. Several other government parties, including the <span style="color: #FF6666;">**PSI**</span>, abstained. The result was a defeat for the government by the large margin of 70 to 48.
 

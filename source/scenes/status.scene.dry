@@ -84,7 +84,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 <img src="img/icons/PIR.png" style="height: 10px;"> {!<span class="tooltip-text" title="Greater Indonesia Union Party" style="color: #FF9933;"><strong>PIR</strong></span>!} <br>Leader: Wongsonegoro <br>Ideology: Nationalism <br>Relations: [+ pir_relation : relationships +]
 
-<img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>PRN</strong></span>!} <br>Leader: Djody Gondokusumo <br>Ideology: Right-wing Nationalism <br>Relations: [+ prn_relation : relationships +]
+<img src="img/icons/PRN.png" style="height: 10px;"> {!<span class="tooltip-text" title="National People's Party" style="color: #545454;"><strong>[+ prn_name +]</strong></span>!} <br>Leader: Djody Gondokusumo <br>Ideology: Right-wing Nationalism <br>Relations: [+ prn_relation : relationships +]
 
 <img src="img/icons/murba.png" style="height: 10px;"> {!<span class="tooltip-text" title="Proletarian Party" style="color: #ff3333;"><strong>Murba</strong></span>!} <br>Leader: Sukarni <br>Ideology: Tan Malaka Thought <br>Relations: [+ murba_relation : relationships +]
 
