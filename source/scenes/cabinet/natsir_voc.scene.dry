@@ -4,7 +4,21 @@ new-page: true
 tags: event
 max-visits: 1
 view-if: year = 1950 and month = 11
+<<<<<<< HEAD
+
+= Vote of Confidence
+
+Ever since its formation, the Natsir cabinet had been attacked on numerous grounds. In particular, <span style="color: var(--pni-colour);">**PNI**</span> and <span style="color: var(--pki-colour);">**PKI**</span> spokesmen and others hammered on the subject of the procedures whereby Natsir had formed the cabinet, although Natsir himself maintained that in this matter he was accountable not to parliament but to the President. They argued that he had in fact formed "a parliamentary business cabinet" rather than a coalition cabinet based on the parties. This, they said, weakened Indonesia's new traditions of parliamentarianism. 
+
+Parallel criticisms of Natsir were made by <span style="color: var(--masyumi-colour);">**Masjumi**</span> leaders of the Sukiman group. Dr. Sukiman, speaking in parliament, said that the cabinet's composition reflected army pressure and that it was in fact a business cabinet and as such a violation of the President's instructions. Mr. Jusuf Wibisono, a close follower of Sukiman and a personal rival of Natsir, took a similar position.
+
+In order to end the seemingly endless parliamentary bickering, the Natsir cabinet has called for a vote of confidence, aiming to solidify its position.
+
+- @voc: The voting commences..
+
+@voc
 on-departure: prn_name = "PRN";
+>>>>>>> 1f560a79c79b0fc7b8ba67ab353f0bb60a2b08a4
 on-display: {!
 const data = [
     {
@@ -143,18 +157,6 @@ if (window && d3) {
     });
 }
 !}
-
-= Vote of Confidence
-
-Ever since its formation, the Natsir cabinet had been attacked on numerous grounds. In particular, <span style="color: var(--pni-colour);">**PNI**</span> and <span style="color: var(--pki-colour);">**PKI**</span> spokesmen and others hammered on the subject of the procedures whereby Natsir had formed the cabinet, although Natsir himself maintained that in this matter he was accountable not to parliament but to the President. They argued that he had in fact formed "a parliamentary business cabinet" rather than a coalition cabinet based on the parties. This, they said, weakened Indonesia's new traditions of parliamentarianism. 
-
-Parallel criticisms of Natsir were made by <span style="color: var(--masyumi-colour);">**Masjumi**</span> leaders of the Sukiman group. Dr. Sukiman, speaking in parliament, said that the cabinet's composition reflected army pressure and that it was in fact a business cabinet and as such a violation of the President's instructions. Mr. Jusuf Wibisono, a close follower of Sukiman and a personal rival of Natsir, took a similar position.
-
-In order to end the seemingly endless parliamentary bickering, the Natsir cabinet has called for a vote of confidence, aiming to solidify its position.
-
-- @voc: The voting commences..
-
-@voc
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
