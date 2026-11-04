@@ -4,7 +4,7 @@ new-page: true
 tags: event
 max-visits: 1
 view-if: year = 1950 and month = 11
-
+on-departure: prn_name = "PRN";
 on-display: {!
 const data = [
     {
@@ -162,5 +162,5 @@ The voting concludes. The cabinet has won by a count of [+ greenVotes +] to [+ r
 
 Despite the considerable margin of votes obtained by the cabinet, it appears that the motion has only exacerbated tensions between the parliament and the cabinet.
 
-- @root
+- @root: Continue..
 
