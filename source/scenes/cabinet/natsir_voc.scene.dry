@@ -4,7 +4,6 @@ new-page: true
 tags: event
 max-visits: 1
 view-if: year = 1950 and month = 11
-<<<<<<< HEAD
 
 = Vote of Confidence
 
@@ -18,7 +17,6 @@ In order to end the seemingly endless parliamentary bickering, the Natsir cabine
 
 @voc
 on-departure: prn_name = "PRN";
->>>>>>> 1f560a79c79b0fc7b8ba67ab353f0bb60a2b08a4
 on-display: {!
 const data = [
     {
