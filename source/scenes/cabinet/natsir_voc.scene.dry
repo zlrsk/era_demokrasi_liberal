@@ -17,6 +17,7 @@ In order to end the seemingly endless parliamentary bickering, the Natsir cabine
 
 @voc
 on-departure: prn_name = "PRN";
+on-arrival: {! Q.natsir_voc_aye = 88 + Math.round(Q.masyumi_faction * 46 / 100); Q.natsir_voc_nay = 66; !}
 on-display: {!
 const data = [
     {
@@ -145,18 +146,12 @@ if (window && d3) {
     parliament.enter.fromCenter(true).smallToBig(true);
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#natsir_voc_motion").datum(data).call(parliament);
-    // Calculate green and red votes
-    var greenVotes = 0, redVotes = 0;
-    data.forEach(function(d) {
-        if (d.color === "#158e33") greenVotes += d.seats;
-        if (d.color === "#c51313") redVotes += d.seats;
-    });
 }
 !}
 
 {!<svg id="natsir_voc_motion" style="width: 500px; height: 250px;"> </svg>!}
 
-The voting concludes. The cabinet has won by a count of [+ greenVotes +] to [+ redVotes +]. Among the parties represented in the cabinet, the <span style="color: var(--parkindo-colour);">**Parkindo**</span> abstained and the <span style="color: var(--psii-colour);">**PSII**</span> surprisingly voted against the confidence motion. Although Natsir has the backing of the majority of the <span style="color: var(--masyumi-colour);">**Masjumi**</span> executive, his actions as prime minister has only aggravated the deepening division within the party. This division is made visible during the vote where <span style="color: var(--masyumi-colour);">**Masjumi**</span> leaders, such as Jusuf Wibisono, Burhanuddin Harahap, and other members of the Sukiman group, have decided to abstain on the vote. The only fraction which is not in government yet supported the motion is the <span style="color: var(--prn-colour);">**PNI-M**</span>. 
+The voting concludes. The cabinet has won by a count of [+ natsir_voc_aye +] to [+ natsir_voc_nay +]. Among the parties represented in the cabinet, the <span style="color: var(--parkindo-colour);">**Parkindo**</span> abstained and the <span style="color: var(--psii-colour);">**PSII**</span> surprisingly voted against the confidence motion. Although Natsir has the backing of the majority of the <span style="color: var(--masyumi-colour);">**Masjumi**</span> executive, his actions as prime minister has only aggravated the deepening division within the party. This division is made visible during the vote where <span style="color: var(--masyumi-colour);">**Masjumi**</span> leaders, such as Jusuf Wibisono, Burhanuddin Harahap, and other members of the Sukiman group, have decided to abstain on the vote. The only fraction which is not in government yet supported the motion is the <span style="color: var(--prn-colour);">**PNI-M**</span>. 
 
 Despite the considerable margin of votes obtained by the cabinet, it appears that the motion has only exacerbated tensions between the parliament and the cabinet.
 
