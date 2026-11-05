@@ -130,8 +130,6 @@ const data = [
 //aye: 118
 //nay: 73
 
-Q.parliament_diagram = data
-
 if (window && d3) {
     var width = 500; 
     var height = 500;
