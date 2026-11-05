@@ -19,12 +19,12 @@ In our media and campaign materials, who should we consider as our main opponent
 - @easy_discard
 
 @pki
-on-arrival: enemies = "<span style='color: #c00000;'>**PKI**</span>"; wilopo_strength += 5; sidik_dissent += 8; wilopo_dissent -= 5; pki_relation -= 15; masyumi_relation += 5; workers_pki -= 4;
+on-arrival: enemies = "<span style='color: #c00000;'>**PKI**</span>"; wilopo_strength += 5; sidik_dissent += 8; wilopo_dissent -= 5; pki_relation -= 15; masyumi_relation += 5; masyumi_faction -= 3; workers_pki -= 4;
 
 This move wins us some measure of approval among the <span style="color: #000000;">Islamic</span> parties, but the left is strongly against this. However, If we are to reconcile with the <span style="color: #c00000;">**PKI**</span>, this may not be the best choice.
 
 @islam
-on-arrival: enemies = "<span style='color: #000000;'>Islamic</span> parties"; sidik_strength += 8; sidik_dissent -= 5; psii_relation -= 4; masyumi_relation -= 5; pki_relation += 5; wilopo_dissent += 8; coalition_dissent += 1
+on-arrival: enemies = "<span style='color: #000000;'>Islamic</span> parties"; sidik_strength += 8; sidik_dissent -= 5; psii_relation -= 4; masyumi_relation -= 5; masyumi_faction += 3; pki_relation += 5; wilopo_dissent += 8; coalition_dissent += 1
 
 Our rhetoric against the <span style="color: #000000;">Islamic</span> parties is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.
 

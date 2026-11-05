@@ -110,7 +110,7 @@ subtitle: -1 resources
 view-if: (((sidik_strength > wilopo_strength) and (sidik_strength > partindo_strength)) or ((partindo_strength > wilopo_strength) and (partindo_strength > sidik_strength))) and masyumi_leader == "Mohammad Natsir"
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; masyumi_relation += 4*(wilopo_strength / 10);
+on-arrival: resources -= 1; masyumi_relation += 4*(wilopo_strength / 10); masyumi_faction -= 10; 
 
 @sukiman_connections1
 subtitle: -1 resources
