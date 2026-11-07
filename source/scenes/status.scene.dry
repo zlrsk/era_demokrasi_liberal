@@ -68,7 +68,7 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Politics
 <hr>
 
-<img src="img/icons/PNI.png" style="height: 10px;"> <span class="tooltip-wrap" style="color: var(--pni-colour);">**PNI**<span class="tooltip-tip" style="text-align: center;color: var(--text-color);"><img src="img/icons/PNI.png" style="width: 45%;border: 0px;">Indonesian National Party</span></span> <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
+<img src="img/icons/PNI.png" style="height: 10px;"> + <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
 
 <img src="img/icons/masjumi.png" style="height: 10px;"> <span class="tooltip-wrap" style="color: var(--masyumi-colour);">**Masjumi**<span class="tooltip-tip" style="text-align: center;color: var(--text-color);"><img src="img/icons/masjumi.png" style="width: 45%;border: 0px;">Council of Indonesian Muslim Associations Party</span></span> <br>Leader: [+ masyumi_leader +] <br>Ideology: [+ masyumi_ideology +] <br>Relations: [+ masyumi_relation : relationships +]
 
@@ -299,7 +299,7 @@ if (d3 && window && Q.started) {
 <div style="text-align: center;">**[+ dprs_speaker +]** ([? if dprs_speaker_party == "Masyumi":<span style="color: #000000;">**M**</span>?][? if dprs_speaker_party == "PNI":<span style="color: #990000;">**PNI**</span>?])</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*Speaker*</div>
 
-<div style="width: auto;">{!<svg id="reichstag_st" style="display: block;"> </svg>!}</div>
+<div style="width: auto;">{!<svg id="reichstag_st" style="display: block;width: 100%;"> </svg>!}</div>
 <div style="text-align: center;margin-top: 5px;">**Dewan Perwakilan Rakyat [? if election_held == 0: Sementara?]**</div>
 <div style="text-align: center;color: var(--unavailable-color);font-size: 0.8em;">*[? if election_held == 0: Provisional?] House of Representatives*</div>
 <hr>
