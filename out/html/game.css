@@ -632,24 +632,18 @@ table {
     fill: #000000;
 }
 
-.tooltip-text {
-  cursor: help;
-  text-decoration: dotted underline;
-  user-select: none;
-  position: relative; 
-}
-
 .tooltip-wrap {
   position: relative;
   text-decoration: underline;
   text-decoration-style: dotted;
+  user-select: none;
   cursor: help;
 }
 .tooltip-tip {
   visibility: hidden;
   position: absolute;
-  z-index: 5;
-  width: 200px;
+  z-index: 1000;
+  min-width: 200px;
   max-width: 350px;
   top: 100%;
   left: 50%;
@@ -660,7 +654,7 @@ table {
   font-size: 0.75em;
   text-align: left;
   text-decoration: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid #999;
   background-color: var(--content-bg-color);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }

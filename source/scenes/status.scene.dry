@@ -68,7 +68,7 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Politics
 <hr>
 
-<img src="img/icons/PNI.png" style="height: 10px;"> + <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
+<img src="img/icons/PNI.png" style="height: 10px;"> <span class="tooltip-wrap" style="color: var(--pni-colour);">**PNI**<span class="tooltip-tip" style="text-align: center;color: var(--text-color);"><img src="img/icons/PNI.png" style="width: 45%;border: 0px;">Indonesian National Party</span></span> <br>Leader: [+ pni_leader +] <br>Ideology: Marhaenism
 
 <img src="img/icons/masjumi.png" style="height: 10px;"> <span class="tooltip-wrap" style="color: var(--masyumi-colour);">**Masjumi**<span class="tooltip-tip" style="text-align: center;color: var(--text-color);"><img src="img/icons/masjumi.png" style="width: 45%;border: 0px;">Council of Indonesian Muslim Associations Party</span></span> <br>Leader: [+ masyumi_leader +] <br>Ideology: [+ masyumi_ideology +] <br>Relations: [+ masyumi_relation : relationships +]
 
