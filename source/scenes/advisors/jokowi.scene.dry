@@ -24,4 +24,5 @@ go-to: election_1928
 
 @ministries
 title: ministries
+on-arrival: leverage += 50
 go-to: ministries.ministries_pick

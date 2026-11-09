@@ -21,23 +21,41 @@ Who shall hold this ministry?
 - @ministries_pick: Go back.
 
 @interior_pni
-on-arrival: leverage -= 5; interior_minister_party_candidate = "PNI"; interior_minister_candidate = "Iskaq Tjokroadisurjo";
-choose-if: leverage >= 5
+on-arrival: leverage -= 10
+choose-if: leverage >= 10
 unavailable-subtitle: We do not have enough leverage.
+
+Who shall be our pick for this ministry?
+
+- @iskaq_intr: Iskaq Tjokroadisurjo
+- @ali: Ali Sastroamidjojo
+
+@iskaq_intr
+new-page: true
+on-arrival: interior_minister_party_candidate = "PNI"; interior_minister_candidate = "Iskaq Tjokroadisurjo"
 go-to: ministries_pick
 
 Iskaq Tjokroadisurjo will be appointed Interior Minister.
 
+@ali
+new-page: true
+on-arrival: interior_minister_party_candidate = "PNI"; interior_minister_candidate = "Ali Sastroamidjojo"
+go-to: ministries_pick
+
+Ali Sastroamidjojo will be appointed Interior Minister.
+
 @interior_m
+new-page: true
 on-arrival: interior_minister_party_candidate = "M"; interior_minister_candidate = "Muhammad Roem";
-view-if: masyumi_in_government = 1
+view-if: masyumi_in_government_1 = 1
 go-to: ministries_pick
 
 Muhammad Roem will be appointed Interior Minister.
 
 @interior_pir
+new-page: true
 on-arrival: interior_minister_party_candidate = "PIR"; interior_minister_candidate = "Hazairin";
-view-if: pir_in_government = 1
+view-if: pir_in_government_1 = 1
 go-to: ministries_pick
 
 Hazairin will be appointed Interior Minister.
@@ -69,25 +87,31 @@ Who shall be our pick for this ministry?
 - @soetikno: Soetikno Slamet
 
 @ong
+new-page: true
 on-arrival: finance_minister_party_candidate = "PNI"; finance_minister_candidate = "Ong Eng Die"
 go-to: ministries_pick
 
 Ong Eng Die will be appointed Finance Minister.
 
 @soetikno
+new-page: true
 on-arrival: finance_minister_party_candidate = "PNI"; finance_minister_candidate = "Soetikno Slamet"
 go-to: ministries_pick
 
 Soetikno Slamet will be appointed Finance Minister.
 
 @finance_m
+new-page: true
 on-arrival: finance_minister_party_candidate = "M"; finance_minister_candidate = "Jusuf Wibisono"
+view-if: masyumi_in_government_1 = 1
 go-to: ministries_pick
 
 Jusuf Wibisono will be appointed as Finance Minister
 
 @finance_psi
+new-page: true
 on-arrival: finance_minister_party_candidate = "PSI"; finance_minister_candidate = "Sumitro Djojohadikusumo"
+view-if: psi_in_government_1 = 1
 go-to: ministries_pick
 
 Sumitro Djojohadikusumo will be appointed as Finance Minister
@@ -120,33 +144,51 @@ Who shall be our pick for this ministry?
 
 - @sujono: Sujono Hadinoto
 - @wilopo: Wilopo
+- @iskaq_econ: Iskaq Tjokroadisurjo
 
-@sujono 
+@sujono
+new-page: true
+view-if: year < 1952 
 on-arrival: economic_minister_party_candidate = "PNI"; economic_minister_candidate = "Sujono Hadinoto"
 go-to: ministries_pick
 
 Sujono Hadinoto will be appointed Minister of Trade and Industry.
 
-@wilopo 
+@wilopo
+new-page: true
+view-if: year >= 1952
 on-arrival: economic_minister_part_candidate = "PNI"; economic_minister_candidate = "Wilopo"
 go-to: ministries_pick
 
 Wilopo will be appointed Minister of Trade and Industry.
 
+@iskaq_econ
+new-page: true
+choose-if: interior_minister_candidate != "Iskaq Tjokroadisurjo";
+unavailable-subtitle: Iskaq is already the candidate for the Interior Minister.
+on-arrival: economic_minister_part_candidate = "PNI"; economic_minister_candidate = "Iskaq Tjokroadisurjo"
+go-to: ministries_pick
+
 @econ_psi
+new-page: true
 on-arrival: economic_minister_party_candidate = "PSI"; economic_minister_candidate = "Sumitro Djojohadikusumo"
+view-if: psi_in_government_1 = 1
 go-to: ministries_pick
 
 Sumitro Djojohadikusumo will be appointed Minister of Trade and Industry.
 
 @econ_katolik
+new-page: true
 on-arrival: economic_minister_party_candidate = "Katolik"; economic_minister_candidate = "I. J. Kasimo"
+view-if: katolik_in_government_1 = 1
 go-to: ministries_pick
 
 I. J. Kasimo will be appointed Minister of Trade and Industry.
 
 @econ_pir
+new-page: true
 on-arrival: economic_minister_party_candidate = "PIR"; economic_minister_candidate = "Rooseno Surjohadikusumo"
+view-if: pir_in_government_1 = 1
 go-to: ministries_pick
 
 Rooseno Surjohadikusumo will be appointed Minister of Trade and Industry.
@@ -169,6 +211,7 @@ Who shall hold this ministry?
 - @ministries_pick: Go back.
 
 @justice_pni
+new-page: true
 choose-if: leverage >= 10
 unavailable-subtitle: We do not have enough leverage.
 go-to: ministries_pick
@@ -177,19 +220,25 @@ on-arrival: leverage -= 10; justice_minister_party = "PNI"; justice_minister = "
 [? if year <1955: Susanto Tirtoprodjo?][? if year >= 1955: Gustaaf Adolf Maengkom?] will be appointed Justice Minister.
 
 @justice_psi
+new-page: true
 on-arrival: economic_minister_party_candidate = "PSI"; economic_minister_candidate = "Lukman Wiriadinata"
+view-if: psi_in_government_1 = 1
 go-to: ministries_pick
 
 Lukman Wiriadinata will be appointed Minister of Justice.
 
 @justice_m
+new-page: true
 on-arrival: economic_minister_party_candidate = "M"; economic_minister_candidate = "Muljatno"
+view-if: masyumi_in_government_1 = 1
 go-to: ministries_pick
 
 Muljatno will be appointed Minister of Justice.
 
 @justice_pir
+new-page: true
 on-arrival: economic_minister_party_candidate = "PIR"; economic_minister_candidate = "Wongsonegoro"
+view-if: pir_in_government_1 = 1
 go-to: ministries_pick
 
 Wongsonegoro will be appointed Minister of Justice.
@@ -206,6 +255,8 @@ go-to: foreign_1
 Who shall take this ministry?
 
 - @foreign_pni: We will take this ministry.
+- @foreign_psi: The <span style="color: var(--psi-colour);">**PSI**</span>
+- @foreign_m : The <span style="color: var(--masyumi-colour);">**Masjumi**</span>
 - @ministries_pick: Go back.
 
 
@@ -221,31 +272,41 @@ Who shall be our pick for this ministry?
 - @ruslan: Roeslan Abdoelgani
 
 @sunario
+new-page: true
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Soenario Sastrowardoyo"
 go-to: ministries_pick
 
-Soenario Sastrowardoyo will be appointed Foreign Minister.
+Soenario Sastrowardoyo will be appointed Minister of Foreign Affairs.
 
 @mukarto
+new-page: true
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Moekarto Notowidigdo"
 go-to: ministries_pick
 
-Moekarto Notowidigdo will be appointed Foreign Minister.
+Moekarto Notowidigdo will be appointed Minister of Foreign Affairs.
 
 @ruslan
+new-page: true
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Roeslan Abdoelgani"
 go-to: ministries_pick
 
-Roeslan Abdoelgani will be appointed Foreign Minister.
+Roeslan Abdoelgani will be appointed Minister of Foreign Affairs.
 
-@religious
-title: Ministry of Religious Affairs
-subtitle: This position is reserved for Islamic Parties
-unavailable-subtitle: This position is reserved for Islamic Parties.
-choose-if: leverage >= 10000
-view-if: religious_minister_party != "PNI"
+@foreign_psi
+new-page: true
+on-arrival: economic_minister_party_candidate = "PSI"; economic_minister_candidate = "Soebandrio"
+view-if: psi_in_government_1 = 1
 go-to: ministries_pick
-tags: mins_1951
+
+Soebandrio will be appointed Minister of Foreign Affairs.
+
+@foreign_m
+new-page: true
+on-arrival: economic_minister_party_candidate = "M"; economic_minister_candidate = "Ahmad Soebardjo"
+view-if: masyumi_in_government_1 = 1
+go-to: ministries_pick
+
+Ahmad Soebardjo will be appointed Minister of Foreign Affairs.
 
 @reichswehr
 title: Defense Ministry
@@ -283,9 +344,19 @@ go-to: ministries_pick
 
 Arnold Mononutu will be appointed Justice Minister.
 
+@religious
+title: Ministry of Religious Affairs
+subtitle: This position is reserved for Islamic Parties
+unavailable-subtitle: This position is reserved for Islamic Parties.
+choose-if: leverage >= 10000
+view-if: religious_minister_party != "PNI"
+go-to: ministries_pick
+tags: mins_1951
+
 @no_more
 title: No more ministries.
 subtitle: [? if leverage >= 10 : We still have some more leverage to gain ministries. ?][? if leverage < 10 : We do not have much leverage left. ?]
+on-arrival: pni_in_government = 1
 tags: mins_1951
 
 This coalition arrangement is tolerable to all.
