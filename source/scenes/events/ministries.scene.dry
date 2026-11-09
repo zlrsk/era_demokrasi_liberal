@@ -157,16 +157,16 @@ Sujono Hadinoto will be appointed Minister of Trade and Industry.
 @wilopo
 new-page: true
 view-if: year >= 1952
-on-arrival: economic_minister_part_candidate = "PNI"; economic_minister_candidate = "Wilopo"
+on-arrival: economic_minister_party_candidate = "PNI"; economic_minister_candidate = "Wilopo"
 go-to: ministries_pick
 
 Wilopo will be appointed Minister of Trade and Industry.
 
 @iskaq_econ
 new-page: true
-choose-if: interior_minister_candidate != "Iskaq Tjokroadisurjo";
+choose-if: interior_minister_candidate != "Iskaq Tjokroadisurjo"
 unavailable-subtitle: Iskaq is already the candidate for the Interior Minister.
-on-arrival: economic_minister_part_candidate = "PNI"; economic_minister_candidate = "Iskaq Tjokroadisurjo"
+on-arrival: economic_minister_party_candidate = "PNI"; economic_minister_candidate = "Iskaq Tjokroadisurjo"
 go-to: ministries_pick
 
 @econ_psi
