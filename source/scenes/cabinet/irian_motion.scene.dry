@@ -4,9 +4,6 @@ new-page: true
 tags: event
 max-visits: 1
 view-if: irian_motion_timer = 1
-go-to: djody_motion if month = 12 and year = 1950; kusnan_motion if month != 12 or year != 1950;
-
-@djody_motion
 
 = The Crisis over West Irian
 
@@ -167,6 +164,3 @@ Eventually, the immediate crisis has passed.
 
 - @root: Continue...
 
-@kusnan_motion
-
-= Crisis Over West Irian
