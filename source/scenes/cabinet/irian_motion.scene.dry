@@ -4,7 +4,7 @@ new-page: true
 tags: event
 max-visits: 1
 view-if: irian_motion_timer = 1
-go-to: djody_motion if month = 12 and year = 1950; kusnan_motion if month != 12 and year != 1950;
+go-to: djody_motion if month = 12 and year = 1950; kusnan_motion if month != 12 or year != 1950;
 
 @djody_motion
 
