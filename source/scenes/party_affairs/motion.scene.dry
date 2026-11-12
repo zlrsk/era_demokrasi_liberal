@@ -1,0 +1,29 @@
+title: Parliamentary Motions
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: motion_timer <= 0
+on-arrival: month_actions += 1; motion_timer += 12;
+card-image: img/dprs.png
+
+= Parliamentary Motions
+
+
+
+- @irian: Criticize the cabinet's handling of the Irian issue.
+- @r39: Demand the cabinet revoke Regulation 39.
+- @emergency: Condemn the cabinet's frequent use of emergency laws.
+- @formateur: Call on the President to appoint *formateurs* for a new cabinet.
+
+
+@irian
+view-if: special_hague_conf == 1
+on-arrival: irian_motion_timer += 2
+
+Our members of parliament have tabled a motion urging the government to "continue to demand the immediate incorporation of West Irian into the territory of the Republic of Indonesia".
+
+@r39
+
+@emergency
+
+@formateur

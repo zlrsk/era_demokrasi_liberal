@@ -527,6 +527,7 @@ Q.reichsbanner_timer = 0;
 Q.shuffle_leadership_timer = 0;
 Q.streetfighting_timer = 0;
 Q.peoples_party_timer = 0;
+Q.motion_timer = 0;
 
 // n_elections is the number of elections that have happened since the start of the game.
 Q.n_elections = 0;
@@ -563,6 +564,10 @@ Q.war_guilt_timer = 0;
 Q.womens_rights_timer = 0;
 Q.economic_democracy_timer = 0;
 Q.coalition_affairs_timer = 0;
+
+Q.irian_motion_timer = 0;
+Q.r39_motion_timer = 0;
+Q.formateur_motion_timer = 0;
 
 // event timers
 Q.emergency_cuts_timer = 0;

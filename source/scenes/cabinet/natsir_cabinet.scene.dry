@@ -3,7 +3,7 @@ subtitle: The *formateur* is to form a cabinet.
 new-page: true
 tags: event
 max-visits: 1
-view-if: year = 1950 and month = 9
+view-if: year = 195 and month = 9
 
 = Negotiations for a New Cabinet
 
